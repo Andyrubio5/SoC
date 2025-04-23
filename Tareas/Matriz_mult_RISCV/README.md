@@ -13,6 +13,7 @@ El resultado se almacena en una tercera matriz `C`, y luego se imprime fila por 
 Las matrices `A` y `B` están definidas en la sección `.data` como vectores lineales de 9 enteros:
 
 # Matriz A (3x3)
+```
 A:  .word 1, 2, 3
     .word 4, 5, 6
     .word 7, 8, 9
@@ -31,7 +32,7 @@ C:  .word 0, 0, 0
 size:     .word 3           # Tamaño de la matriz
 newline:  .asciz "\n"       # Salto de línea
 space:    .asciz " "        # Espacio entre elementos
-
+```
 
 
 ###  Estructura de bucles
