@@ -1,0 +1,2 @@
+# SoC
+Actividades_practicas
