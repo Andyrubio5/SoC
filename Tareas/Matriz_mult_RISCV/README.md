@@ -70,7 +70,7 @@ Una vez calculada la matriz `C`, se imprimen sus valores con:
 - `ecall 1`: para imprimir enteros
 - `ecall 4`: para imprimir un espacio (`" "`) o salto de línea (`"\n"`)
 
-### Ejemplo de salida esperada
+### Ejemplo de salida esperada en memoria (C)
 
 ```
 30 24 18 
@@ -80,19 +80,6 @@ Una vez calculada la matriz `C`, se imprimen sus valores con:
 
 ---
 
-## Instrucciones utilizadas
 
-Este programa usa únicamente instrucciones del conjunto base **RISC-V 32I**, incluyendo:
-
-- `li`, `lw`, `sw`, `add`, `addi`, `mul`, `slli`, `bge`, `j`, `ecall`
-- `la`: pseudoinstrucción para cargar direcciones
-
----
-
-##  Resultado esperado en memoria (C)
-
-30   |  24   |  18   |
-84   |  69   |  54   |
-138   | 114   |  90   |
 
 
