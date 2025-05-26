@@ -31,5 +31,3 @@ El procesador soporta un subconjunto de instrucciones de la especificación RV32
 - **Tipo U**: `LUI`, `AUIPC`
 - **Tipo J**: `JAL`
 
-*Nota: La implementación de algunas instrucciones puede estar en desarrollo.*
-
