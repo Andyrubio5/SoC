@@ -23,7 +23,7 @@ reg [11:0] aux_extend;
         endcase
         
         if (ImmSrc == 2'b11) // J-type
-            ImmExt = {{11{extend_in[31]}}, extend_in[31], extend_in[19:12], extend_in[20], extend_in[30:21]};
+            ImmExt = {{11{extend_in[31]}}, extend_in[31], extend_in[19:12], extend_in[20], extend_in[30:21],1'b0};
         else    
             ImmExt = {20{aux_extend[11]}}; 
     end
