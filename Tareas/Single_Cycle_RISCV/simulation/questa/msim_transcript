@@ -24,57 +24,36 @@
 # Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 09:31:58 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v 
-# -- Compiling module alu_decoder_tb
+# Start time: 10:50:59 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v 
+# -- Compiling module main_decoder
 # 
 # Top level modules:
-# 	alu_decoder_tb
-# End time: 09:31:58 on May 28,2025, Elapsed time: 0:00:00
+# 	main_decoder
+# End time: 10:50:59 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v}
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 09:31:58 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v 
-# -- Compiling module ALU
+# Start time: 10:50:59 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v 
+# -- Compiling module tb_main_decoder
 # 
 # Top level modules:
-# 	ALU
-# End time: 09:31:59 on May 28,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v}
-# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 09:31:59 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v 
-# -- Compiling module alu_decoder
-# 
-# Top level modules:
-# 	alu_decoder
-# End time: 09:31:59 on May 28,2025, Elapsed time: 0:00:00
+# 	tb_main_decoder
+# End time: 10:50:59 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v}
-# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 09:31:59 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v 
-# -- Compiling module alu_decoder_tb
-# 
-# Top level modules:
-# 	alu_decoder_tb
-# End time: 09:31:59 on May 28,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  alu_decoder_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" alu_decoder_tb 
-# Start time: 09:31:59 on May 28,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_main_decoder
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_main_decoder 
+# Start time: 10:50:59 on May 28,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.alu_decoder_tb(fast)
-# Loading work.alu_decoder(fast)
-# Loading work.ALU(fast)
+# Loading work.tb_main_decoder(fast)
+# Loading work.main_decoder(fast)
 # 
 # add wave *
 # view structure
@@ -82,17 +61,7 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Caso 1: ADD (lw/sw) -> ALUControl=000, Resultado=        15, Zero=0
-# Caso 2: SUB (beq) -> ALUControl=001, Resultado=         5, Zero=0
-# Caso 3: ADD (add/addi) -> ALUControl=000, Resultado=        15, Zero=0
-# Caso 4: SUB (sub) -> ALUControl=001, Resultado=         5, Zero=0
-# Caso 5: SLT (slt) -> ALUControl=101, Resultado=         0, Zero=1
-# Caso 6: OR (or) -> ALUControl=011, Resultado=        15, Zero=0
-# Caso 7: AND (and) -> ALUControl=010, Resultado=         0, Zero=1
-# Caso 8: Default (inválido) -> ALUControl=xxx, Resultado=         0, Zero=1
-# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v(103)
-#    Time: 80 ns  Iteration: 0  Instance: /alu_decoder_tb
+# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v(74)
+#    Time: 80 ns  Iteration: 0  Instance: /tb_main_decoder
 # 1
-# Break in Module alu_decoder_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v line 103
-# End time: 09:35:45 on May 28,2025, Elapsed time: 0:03:46
-# Errors: 0, Warnings: 1
+# Break in Module tb_main_decoder at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v line 74

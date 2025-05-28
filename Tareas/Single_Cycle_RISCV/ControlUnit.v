@@ -33,7 +33,7 @@ module ControlUnit(
     );
     
     // Instancia del ALU Decoder
-    ALUDecoder alu_decoder_inst(
+    alu_decoder alu_decoder_inst(
         .ALUOp(ALUOp),
         .funct3(funct3),
         .op5(op[5]),       // bit 5 del opcode
