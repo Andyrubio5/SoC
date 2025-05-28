@@ -1,3 +1,5 @@
+// Descripción: Módulo de archivo de registros para un procesador RISC-V simple
+
 module register_file (
     input clk,            // Reloj del sistema
     input [4:0] A1,       // Dirección de lectura 1 (RD1)
@@ -12,19 +14,25 @@ module register_file (
     // Banco de 32 registros de 32 bits
     reg [31:0] registers [31:0];
 
+// Inicialización y manejo de R0
+integer i; // Declarar la variable fuera del bucle
 
-    always @(*) 
-    begin
-        RD1 = registers[A1];  // Lectura del registro A1
-        RD2 = registers[A2];  // Lectura del registro A2
+initial begin
+    for (i = 0; i < 32; i = i + 1) begin
+        registers[i] = 32'b0;
     end
+end
 
-    always@(posedge clk)
-    begin
-        if (WE3 == 1) begin
-            registers[A3] <= WD3;  // Escritura en el registro A3
-        end
+always @(posedge clk) begin
+    if (WE3 && A3 != 5'b00000) begin  // No escribir en R0
+        registers[A3] <= WD3;
     end
+end
+
+always @(*) begin
+    RD1 = (A1 == 5'b00000) ? 32'b0 : registers[A1];  // R0 siempre 0
+    RD2 = (A2 == 5'b00000) ? 32'b0 : registers[A2];  // R0 siempre 0
+end
 
 
 endmodule
