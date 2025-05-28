@@ -24,36 +24,57 @@
 # Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 08:41:53 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v 
-# -- Compiling module register_file
+# Start time: 09:31:58 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v 
+# -- Compiling module alu_decoder_tb
 # 
 # Top level modules:
-# 	register_file
-# End time: 08:41:53 on May 28,2025, Elapsed time: 0:00:00
+# 	alu_decoder_tb
+# End time: 09:31:58 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 08:41:53 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file_tb.v 
-# -- Compiling module register_file_tb
+# Start time: 09:31:58 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v 
+# -- Compiling module ALU
 # 
 # Top level modules:
-# 	register_file_tb
-# End time: 08:41:53 on May 28,2025, Elapsed time: 0:00:00
+# 	ALU
+# End time: 09:31:59 on May 28,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:31:59 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v 
+# -- Compiling module alu_decoder
+# 
+# Top level modules:
+# 	alu_decoder
+# End time: 09:31:59 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  register_file_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" register_file_tb 
-# Start time: 08:41:54 on May 28,2025
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:31:59 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v 
+# -- Compiling module alu_decoder_tb
+# 
+# Top level modules:
+# 	alu_decoder_tb
+# End time: 09:31:59 on May 28,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  alu_decoder_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" alu_decoder_tb 
+# Start time: 09:31:59 on May 28,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.register_file_tb(fast)
-# Loading work.register_file(fast)
+# Loading work.alu_decoder_tb(fast)
+# Loading work.alu_decoder(fast)
+# Loading work.ALU(fast)
 # 
 # add wave *
 # view structure
@@ -61,111 +82,17 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# === Prueba del Register File ===
-# Time	A1	A2	A3	WE3	WD3		RD1		RD2
-# ----------------------------------------------------------------
-# 
-# --- Test 1: Estado inicial ---
-# 6000	01	02	00	0	00000000	00000000	00000000
-# 
-# --- Test 2: Escritura de datos ---
-#   [ESCRITURA] R1 <= 0xdeadbeef
-# 15000	Escribiendo R1 = 0xdeadbeef
-#   [ESCRITURA] R2 <= 0x12345678
-# 25000	Escribiendo R2 = 0x12345678
-#   [ESCRITURA] R5 <= 0xabcdef00
-# 35000	Escribiendo R5 = 0xabcdef00
-#   [ESCRITURA] R31 <= 0xffffffff
-# 45000	Escribiendo R31 = 0xffffffff
-# 
-# --- Test 3: Verificación de lecturas ---
-# 46000	Leyendo R1=deadbeef, R2=12345678
-# 47000	Leyendo R5=abcdef00, R31=ffffffff
-# 
-# --- Test 4: Lectura simultánea del mismo registro ---
-# 48000	Leyendo R1 en ambos puertos: RD1=deadbeef, RD2=deadbeef
-# 
-# --- Test 5: Escritura deshabilitada (WE3=0) ---
-# 56000	Intentar escribir R1=0, pero WE3=0. R1 actual=deadbeef
-# 
-# --- Test 6: Escritura y lectura simultanea ---
-#   [ESCRITURA] R3 <= 0x55555555
-# 66000	Escritura y lectura de R3: Escrito=55555555, Leído=55555555
-# 
-# --- Test 7: Prueba de todos los registros ---
-#   [ESCRITURA] R0 <= 0xa0000000
-# R 0: ERROR - Esperado 0xa0000000, Obtenido 0x00000000
-#   [ESCRITURA] R1 <= 0xa0000001
-# R 1: OK - Escrito y leído correctamente (0xa0000001)
-#   [ESCRITURA] R2 <= 0xa0000002
-# R 2: OK - Escrito y leído correctamente (0xa0000002)
-#   [ESCRITURA] R3 <= 0xa0000003
-# R 3: OK - Escrito y leído correctamente (0xa0000003)
-#   [ESCRITURA] R4 <= 0xa0000004
-# R 4: OK - Escrito y leído correctamente (0xa0000004)
-#   [ESCRITURA] R5 <= 0xa0000005
-# R 5: OK - Escrito y leído correctamente (0xa0000005)
-#   [ESCRITURA] R6 <= 0xa0000006
-# R 6: OK - Escrito y leído correctamente (0xa0000006)
-#   [ESCRITURA] R7 <= 0xa0000007
-# R 7: OK - Escrito y leído correctamente (0xa0000007)
-#   [ESCRITURA] R8 <= 0xa0000008
-# R 8: OK - Escrito y leído correctamente (0xa0000008)
-#   [ESCRITURA] R9 <= 0xa0000009
-# R 9: OK - Escrito y leído correctamente (0xa0000009)
-#   [ESCRITURA] R10 <= 0xa000000a
-# R10: OK - Escrito y leído correctamente (0xa000000a)
-#   [ESCRITURA] R11 <= 0xa000000b
-# R11: OK - Escrito y leído correctamente (0xa000000b)
-#   [ESCRITURA] R12 <= 0xa000000c
-# R12: OK - Escrito y leído correctamente (0xa000000c)
-#   [ESCRITURA] R13 <= 0xa000000d
-# R13: OK - Escrito y leído correctamente (0xa000000d)
-#   [ESCRITURA] R14 <= 0xa000000e
-# R14: OK - Escrito y leído correctamente (0xa000000e)
-#   [ESCRITURA] R15 <= 0xa000000f
-# R15: OK - Escrito y leído correctamente (0xa000000f)
-#   [ESCRITURA] R16 <= 0xa0000010
-# R16: OK - Escrito y leído correctamente (0xa0000010)
-#   [ESCRITURA] R17 <= 0xa0000011
-# R17: OK - Escrito y leído correctamente (0xa0000011)
-#   [ESCRITURA] R18 <= 0xa0000012
-# R18: OK - Escrito y leído correctamente (0xa0000012)
-#   [ESCRITURA] R19 <= 0xa0000013
-# R19: OK - Escrito y leído correctamente (0xa0000013)
-#   [ESCRITURA] R20 <= 0xa0000014
-# R20: OK - Escrito y leído correctamente (0xa0000014)
-#   [ESCRITURA] R21 <= 0xa0000015
-# R21: OK - Escrito y leído correctamente (0xa0000015)
-#   [ESCRITURA] R22 <= 0xa0000016
-# R22: OK - Escrito y leído correctamente (0xa0000016)
-#   [ESCRITURA] R23 <= 0xa0000017
-# R23: OK - Escrito y leído correctamente (0xa0000017)
-#   [ESCRITURA] R24 <= 0xa0000018
-# R24: OK - Escrito y leído correctamente (0xa0000018)
-#   [ESCRITURA] R25 <= 0xa0000019
-# R25: OK - Escrito y leído correctamente (0xa0000019)
-#   [ESCRITURA] R26 <= 0xa000001a
-# R26: OK - Escrito y leído correctamente (0xa000001a)
-#   [ESCRITURA] R27 <= 0xa000001b
-# R27: OK - Escrito y leído correctamente (0xa000001b)
-#   [ESCRITURA] R28 <= 0xa000001c
-# R28: OK - Escrito y leído correctamente (0xa000001c)
-#   [ESCRITURA] R29 <= 0xa000001d
-# R29: OK - Escrito y leído correctamente (0xa000001d)
-#   [ESCRITURA] R30 <= 0xa000001e
-# R30: OK - Escrito y leído correctamente (0xa000001e)
-#   [ESCRITURA] R31 <= 0xa000001f
-# R31: OK - Escrito y leído correctamente (0xa000001f)
-# 
-# --- Test 8: Registro R0 (debería ser 0) ---
-#   [ESCRITURA] R0 <= 0xdeadbeef
-# R0: OK - Registro R0 es 0 como debe ser
-# 
-# === Fin de pruebas ===
-# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file_tb.v(149)
-#    Time: 446 ns  Iteration: 0  Instance: /register_file_tb
+# Caso 1: ADD (lw/sw) -> ALUControl=000, Resultado=        15, Zero=0
+# Caso 2: SUB (beq) -> ALUControl=001, Resultado=         5, Zero=0
+# Caso 3: ADD (add/addi) -> ALUControl=000, Resultado=        15, Zero=0
+# Caso 4: SUB (sub) -> ALUControl=001, Resultado=         5, Zero=0
+# Caso 5: SLT (slt) -> ALUControl=101, Resultado=         0, Zero=1
+# Caso 6: OR (or) -> ALUControl=011, Resultado=        15, Zero=0
+# Caso 7: AND (and) -> ALUControl=010, Resultado=         0, Zero=1
+# Caso 8: Default (inválido) -> ALUControl=xxx, Resultado=         0, Zero=1
+# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v(103)
+#    Time: 80 ns  Iteration: 0  Instance: /alu_decoder_tb
 # 1
-# Break in Module register_file_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file_tb.v line 149
-# End time: 08:46:41 on May 28,2025, Elapsed time: 0:04:47
+# Break in Module alu_decoder_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder_tb.v line 103
+# End time: 09:35:45 on May 28,2025, Elapsed time: 0:03:46
 # Errors: 0, Warnings: 1

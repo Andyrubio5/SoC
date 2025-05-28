@@ -1,4 +1,4 @@
-module ALUDecoder(
+module alu_decoder(
     input [1:0] ALUOp,
     input [2:0] funct3,
     input op5, funct7,
@@ -20,10 +20,10 @@ always @(*) begin
                 3'b010: ALUControl = 3'b101; // slt, slti
                 3'b110: ALUControl = 3'b011; // or, ori
                 3'b111: ALUControl = 3'b010; // and, andi
-                default: ALUControl = 3'b000; // default (no debería ocurrir)
+                default: ALUControl = 3'bxxx; // default (no debería ocurrir)
             endcase
         end
-        default: ALUControl = 3'b000; // default (no debería ocurrir)
+        default: ALUControl = 3'bxxx; // default (no debería ocurrir)
     endcase
 end
 
