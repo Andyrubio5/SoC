@@ -1,15 +1,16 @@
-module InstructionMemory (
-    input wire [31:0] Address,
-    output wire [31:0] ReadData
+module InstructionMemory #(parameter ADD = 8) (
+    input [31:0] Address,
+    output [31:0] ReadData
 );
+    // Memoria de instrucciones
+    reg [31:0] ROM [(2**ADD) - 1:0];
 
-    reg [31:0] ROM [10000:0];
-
-    // Carga de instrucciones desde archivo
+    // inicializacion de la memoria de instrucciones
     initial begin
-        $readmemh("instructions.txt", ROM);
+        $readmemh("instructions.hex", ROM);
     end
 
-    assign ReadData = ROM[Address[15:2]];
+    // Lectura de la memoria de instrucciones
+    assign ReadData = ROM[Address >> 2]; 
 
 endmodule

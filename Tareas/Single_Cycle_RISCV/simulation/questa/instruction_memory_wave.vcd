@@ -1,0 +1,303 @@
+$date
+	Wed May 28 08:26:31 2025
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2023.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module InstructionMemory_tb $end
+$var parameter 32 ! ADD $end
+$var reg 32 " Address [31:0] $end
+$var wire 1 # ReadData [31] $end
+$var wire 1 $ ReadData [30] $end
+$var wire 1 % ReadData [29] $end
+$var wire 1 & ReadData [28] $end
+$var wire 1 ' ReadData [27] $end
+$var wire 1 ( ReadData [26] $end
+$var wire 1 ) ReadData [25] $end
+$var wire 1 * ReadData [24] $end
+$var wire 1 + ReadData [23] $end
+$var wire 1 , ReadData [22] $end
+$var wire 1 - ReadData [21] $end
+$var wire 1 . ReadData [20] $end
+$var wire 1 / ReadData [19] $end
+$var wire 1 0 ReadData [18] $end
+$var wire 1 1 ReadData [17] $end
+$var wire 1 2 ReadData [16] $end
+$var wire 1 3 ReadData [15] $end
+$var wire 1 4 ReadData [14] $end
+$var wire 1 5 ReadData [13] $end
+$var wire 1 6 ReadData [12] $end
+$var wire 1 7 ReadData [11] $end
+$var wire 1 8 ReadData [10] $end
+$var wire 1 9 ReadData [9] $end
+$var wire 1 : ReadData [8] $end
+$var wire 1 ; ReadData [7] $end
+$var wire 1 < ReadData [6] $end
+$var wire 1 = ReadData [5] $end
+$var wire 1 > ReadData [4] $end
+$var wire 1 ? ReadData [3] $end
+$var wire 1 @ ReadData [2] $end
+$var wire 1 A ReadData [1] $end
+$var wire 1 B ReadData [0] $end
+$var integer 32 C i $end
+
+$scope module uut $end
+$var parameter 32 D ADD $end
+$var wire 1 E Address [31] $end
+$var wire 1 F Address [30] $end
+$var wire 1 G Address [29] $end
+$var wire 1 H Address [28] $end
+$var wire 1 I Address [27] $end
+$var wire 1 J Address [26] $end
+$var wire 1 K Address [25] $end
+$var wire 1 L Address [24] $end
+$var wire 1 M Address [23] $end
+$var wire 1 N Address [22] $end
+$var wire 1 O Address [21] $end
+$var wire 1 P Address [20] $end
+$var wire 1 Q Address [19] $end
+$var wire 1 R Address [18] $end
+$var wire 1 S Address [17] $end
+$var wire 1 T Address [16] $end
+$var wire 1 U Address [15] $end
+$var wire 1 V Address [14] $end
+$var wire 1 W Address [13] $end
+$var wire 1 X Address [12] $end
+$var wire 1 Y Address [11] $end
+$var wire 1 Z Address [10] $end
+$var wire 1 [ Address [9] $end
+$var wire 1 \ Address [8] $end
+$var wire 1 ] Address [7] $end
+$var wire 1 ^ Address [6] $end
+$var wire 1 _ Address [5] $end
+$var wire 1 ` Address [4] $end
+$var wire 1 a Address [3] $end
+$var wire 1 b Address [2] $end
+$var wire 1 c Address [1] $end
+$var wire 1 d Address [0] $end
+$var wire 1 # ReadData [31] $end
+$var wire 1 $ ReadData [30] $end
+$var wire 1 % ReadData [29] $end
+$var wire 1 & ReadData [28] $end
+$var wire 1 ' ReadData [27] $end
+$var wire 1 ( ReadData [26] $end
+$var wire 1 ) ReadData [25] $end
+$var wire 1 * ReadData [24] $end
+$var wire 1 + ReadData [23] $end
+$var wire 1 , ReadData [22] $end
+$var wire 1 - ReadData [21] $end
+$var wire 1 . ReadData [20] $end
+$var wire 1 / ReadData [19] $end
+$var wire 1 0 ReadData [18] $end
+$var wire 1 1 ReadData [17] $end
+$var wire 1 2 ReadData [16] $end
+$var wire 1 3 ReadData [15] $end
+$var wire 1 4 ReadData [14] $end
+$var wire 1 5 ReadData [13] $end
+$var wire 1 6 ReadData [12] $end
+$var wire 1 7 ReadData [11] $end
+$var wire 1 8 ReadData [10] $end
+$var wire 1 9 ReadData [9] $end
+$var wire 1 : ReadData [8] $end
+$var wire 1 ; ReadData [7] $end
+$var wire 1 < ReadData [6] $end
+$var wire 1 = ReadData [5] $end
+$var wire 1 > ReadData [4] $end
+$var wire 1 ? ReadData [3] $end
+$var wire 1 @ ReadData [2] $end
+$var wire 1 A ReadData [1] $end
+$var wire 1 B ReadData [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx "
+b1000 !
+b1000 D
+bx C
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+xd
+xc
+xb
+xa
+x`
+x_
+x^
+x]
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+xS
+xR
+xQ
+xP
+xO
+xN
+xM
+xL
+xK
+xJ
+xI
+xH
+xG
+xF
+xE
+$end
+#5000
+b0 C
+b0 "
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+1B
+1A
+0@
+0?
+1>
+0=
+0<
+0;
+1:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+1.
+0-
+1,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+#15000
+b1 C
+b100 "
+1b
+1;
+0.
+1+
+#25000
+b10 C
+b1000 "
+0b
+1a
+19
+13
+12
+1.
+1-
+0+
+1*
+1)
+1(
+1'
+1&
+1%
+1$
+1#
+#35000
+b11 C
+b1100 "
+1b
+1=
+0;
+0:
+15
+14
+11
+0.
+0,
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+#45000
+b100 C
+b10000 

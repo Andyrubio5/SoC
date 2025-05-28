@@ -1,0 +1,377 @@
+$date
+	Wed May 28 08:11:11 2025
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2023.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module Extend_tb $end
+$var reg 25 ! extend_in [31:7] $end
+$var reg 2 " ImmSrc [1:0] $end
+$var wire 1 # ImmExt [31] $end
+$var wire 1 $ ImmExt [30] $end
+$var wire 1 % ImmExt [29] $end
+$var wire 1 & ImmExt [28] $end
+$var wire 1 ' ImmExt [27] $end
+$var wire 1 ( ImmExt [26] $end
+$var wire 1 ) ImmExt [25] $end
+$var wire 1 * ImmExt [24] $end
+$var wire 1 + ImmExt [23] $end
+$var wire 1 , ImmExt [22] $end
+$var wire 1 - ImmExt [21] $end
+$var wire 1 . ImmExt [20] $end
+$var wire 1 / ImmExt [19] $end
+$var wire 1 0 ImmExt [18] $end
+$var wire 1 1 ImmExt [17] $end
+$var wire 1 2 ImmExt [16] $end
+$var wire 1 3 ImmExt [15] $end
+$var wire 1 4 ImmExt [14] $end
+$var wire 1 5 ImmExt [13] $end
+$var wire 1 6 ImmExt [12] $end
+$var wire 1 7 ImmExt [11] $end
+$var wire 1 8 ImmExt [10] $end
+$var wire 1 9 ImmExt [9] $end
+$var wire 1 : ImmExt [8] $end
+$var wire 1 ; ImmExt [7] $end
+$var wire 1 < ImmExt [6] $end
+$var wire 1 = ImmExt [5] $end
+$var wire 1 > ImmExt [4] $end
+$var wire 1 ? ImmExt [3] $end
+$var wire 1 @ ImmExt [2] $end
+$var wire 1 A ImmExt [1] $end
+$var wire 1 B ImmExt [0] $end
+
+$scope module uut $end
+$var wire 1 C extend_in [31] $end
+$var wire 1 D extend_in [30] $end
+$var wire 1 E extend_in [29] $end
+$var wire 1 F extend_in [28] $end
+$var wire 1 G extend_in [27] $end
+$var wire 1 H extend_in [26] $end
+$var wire 1 I extend_in [25] $end
+$var wire 1 J extend_in [24] $end
+$var wire 1 K extend_in [23] $end
+$var wire 1 L extend_in [22] $end
+$var wire 1 M extend_in [21] $end
+$var wire 1 N extend_in [20] $end
+$var wire 1 O extend_in [19] $end
+$var wire 1 P extend_in [18] $end
+$var wire 1 Q extend_in [17] $end
+$var wire 1 R extend_in [16] $end
+$var wire 1 S extend_in [15] $end
+$var wire 1 T extend_in [14] $end
+$var wire 1 U extend_in [13] $end
+$var wire 1 V extend_in [12] $end
+$var wire 1 W extend_in [11] $end
+$var wire 1 X extend_in [10] $end
+$var wire 1 Y extend_in [9] $end
+$var wire 1 Z extend_in [8] $end
+$var wire 1 [ extend_in [7] $end
+$var wire 1 \ ImmSrc [1] $end
+$var wire 1 ] ImmSrc [0] $end
+$var reg 32 ^ ImmExt [31:0] $end
+$var reg 12 _ aux_extend [11:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100100011010001010110 !
+b0 "
+b0 ^
+b10010001 _
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0]
+0\
+0[
+1Z
+1Y
+0X
+1W
+0V
+1U
+0T
+0S
+0R
+1Q
+0P
+1O
+1N
+0M
+0L
+0K
+1J
+0I
+0H
+1G
+0F
+0E
+0D
+0C
+$end
+#10000
+b1111111111111010001010110 !
+1M
+1L
+1K
+1I
+1H
+1F
+1E
+1D
+1C
+b111111111111 _
+b11111111111111111111 ^
+1B
+1A
+1@
+1?
+1>
+1=
+1<
+1;
+1:
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+1/
+#20000
+b100100011010001010110 !
+b1 "
+1]
+0M
+0L
+0K
+0I
+0H
+0F
+0E
+0D
+0C
+b10010110 _
+b0 ^
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+#30000
+b1111111111111010001010110 !
+1M
+1L
+1K
+1I
+1H
+1F
+1E
+1D
+1C
+b111111110110 _
+b11111111111111111111 ^
+1B
+1A
+1@
+1?
+1>
+1=
+1<
+1;
+1:
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+1/
+#40000
+b100100011010001010110 !
+b10 "
+0]
+1\
+0M
+0L
+0K
+0I
+0H
+0F
+0E
+0D
+0C
+b1001011 _
+b0 ^
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+#50000
+b1111111111111010001010110 !
+1M
+1L
+1K
+1I
+1H
+1F
+1E
+1D
+1C
+b101111111011 _
+b11111111111111111111 ^
+1B
+1A
+1@
+1?
+1>
+1=
+1<
+1;
+1:
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+1/
+#60000
+b100100011010001010110 !
+b11 "
+1]
+0M
+0L
+0K
+0I
+0H
+0F
+0E
+0D
+0C
+b10001001000 _
+b10100010100010010000 ^
+0B
+0A
+0@
+0?
+0=
+0<
+0:
+09
+08
+06
+04
+03
+02
+00
+#70000
+b1111111111111010001010110 !
+1M
+1L
+1K
+1I
+1H
+1F
+1E
+1D
+1C
+b11111111111 _
+b11111111111110100010111111111110 ^
+1A
+1@
+1?
+1=
+1<
+1:
+19
+18
+1.
+1-
+1,
+1+
+1*
+1)
+1(
+1'
+1&
+1%
+1$
+1#

@@ -24,36 +24,36 @@
 # Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 08:11:05 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v 
-# -- Compiling module Extend
+# Start time: 08:26:22 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v 
+# -- Compiling module InstructionMemory
 # 
 # Top level modules:
-# 	Extend
-# End time: 08:11:05 on May 28,2025, Elapsed time: 0:00:00
+# 	InstructionMemory
+# End time: 08:26:22 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 08:11:06 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend_tb.v 
-# -- Compiling module Extend_tb
+# Start time: 08:26:22 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory_tb.v 
+# -- Compiling module InstructionMemory_tb
 # 
 # Top level modules:
-# 	Extend_tb
-# End time: 08:11:06 on May 28,2025, Elapsed time: 0:00:00
+# 	InstructionMemory_tb
+# End time: 08:26:22 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Extend_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Extend_tb 
-# Start time: 08:11:06 on May 28,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  InstructionMemory_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" InstructionMemory_tb 
+# Start time: 08:26:22 on May 28,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.Extend_tb(fast)
-# Loading work.Extend(fast)
+# Loading work.InstructionMemory_tb(fast)
+# Loading work.InstructionMemory(fast)
 # 
 # add wave *
 # view structure
@@ -61,27 +61,78 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# === Pruebas del módulo Extend ===
-# Time	ImmSrc	extend_in		ImmExt		Tipo
-# ------------------------------------------------------------
-# Time=0: ImmSrc=00, extend_in=0123456, ImmExt=00000000
-# 10000	00	0123456	00000000	I-type (+)
-# Time=10000: ImmSrc=00, extend_in=1fff456, ImmExt=000fffff
-# 20000	00	1fff456	000fffff	I-type (-)
-# Time=20000: ImmSrc=01, extend_in=0123456, ImmExt=00000000
-# 30000	01	0123456	00000000	S-type (+)
-# Time=30000: ImmSrc=01, extend_in=1fff456, ImmExt=000fffff
-# 40000	01	1fff456	000fffff	S-type (-)
-# Time=40000: ImmSrc=10, extend_in=0123456, ImmExt=00000000
-# 50000	10	0123456	00000000	B-type (+)
-# Time=50000: ImmSrc=10, extend_in=1fff456, ImmExt=000fffff
-# 60000	10	1fff456	000fffff	B-type (-)
-# Time=60000: ImmSrc=11, extend_in=0123456, ImmExt=000a2890
-# 70000	11	0123456	000a2890	J-type (+)
-# Time=70000: ImmSrc=11, extend_in=1fff456, ImmExt=fffa2ffe
-# 80000	11	1fff456	fffa2ffe	J-type (-)
+# Tiempo=0: Address=0xxxxxxxxx, ReadData=0xxxxxxxxx
+# === Prueba del módulo InstructionMemory ===
+# Parámetro ADD = 8 (Memoria de 256 palabras)
+# Time	Address		Addr>>2	ReadData	Hex
+# -------------------------------------------------------
+# 
+# --- Prueba 1: Direcciones alineadas ---
+# Tiempo=5000: Address=0x00000000, ReadData=0x00500113
+# 15000	00000000	  0	00500113	00500113
+# Tiempo=15000: Address=0x00000004, ReadData=0x00c00193
+# 25000	00000004	  1	00c00193	00c00193
+# Tiempo=25000: Address=0x00000008, ReadData=0xff718393
+# 35000	00000008	  2	ff718393	ff718393
+# Tiempo=35000: Address=0x0000000c, ReadData=0x0023e233
+# 45000	0000000c	  3	0023e233	0023e233
+# Tiempo=45000: Address=0x00000010, ReadData=0x0041f2b3
+# 55000	00000010	  4	0041f2b3	0041f2b3
+# Tiempo=55000: Address=0x00000014, ReadData=0x004282b3
+# 65000	00000014	  5	004282b3	004282b3
+# Tiempo=65000: Address=0x00000018, ReadData=0x02728863
+# 75000	00000018	  6	02728863	02728863
+# Tiempo=75000: Address=0x0000001c, ReadData=0x0041a233
+# 85000	0000001c	  7	0041a233	0041a233
+# Tiempo=85000: Address=0x00000020, ReadData=0x00020463
+# 95000	00000020	  8	00020463	00020463
+# Tiempo=95000: Address=0x00000024, ReadData=0x00000293
+# 105000	00000024	  9	00000293	00000293
+# Tiempo=105000: Address=0x00000028, ReadData=0x0023a233
+# 115000	00000028	 10	0023a233	0023a233
+# Tiempo=115000: Address=0x0000002c, ReadData=0x005203b3
+# 125000	0000002c	 11	005203b3	005203b3
+# Tiempo=125000: Address=0x00000030, ReadData=0x402383b3
+# 135000	00000030	 12	402383b3	402383b3
+# Tiempo=135000: Address=0x00000034, ReadData=0x0471aa23
+# 145000	00000034	 13	0471aa23	0471aa23
+# Tiempo=145000: Address=0x00000038, ReadData=0x06002103
+# 155000	00000038	 14	06002103	06002103
+# Tiempo=155000: Address=0x0000003c, ReadData=0x005104b3
+# 165000	0000003c	 15	005104b3	005104b3
+# Tiempo=165000: Address=0x00000040, ReadData=0x008001ef
+# 175000	00000040	 16	008001ef	008001ef
+# Tiempo=175000: Address=0x00000044, ReadData=0x00100113
+# 185000	00000044	 17	00100113	00100113
+# Tiempo=185000: Address=0x00000048, ReadData=0x00910133
+# 195000	00000048	 18	00910133	00910133
+# Tiempo=195000: Address=0x0000004c, ReadData=0x0221a023
+# 205000	0000004c	 19	0221a023	0221a023
+# 
+# --- Prueba 2: Direcciones específicas ---
+# Tiempo=205000: Address=0x00000000, ReadData=0x00500113
+# PC=0x00000000 -> Instrucción=0x00500113
+# Tiempo=215000: Address=0x00000004, ReadData=0x00c00193
+# PC=0x00000004 -> Instrucción=0x00c00193
+# Tiempo=225000: Address=0x00000040, ReadData=0x008001ef
+# PC=0x00000040 -> Instrucción=0x008001ef
+# Tiempo=235000: Address=0x000003fc, ReadData=0xxxxxxxxx
+# PC=0x000003fc -> Instrucción=0xxxxxxxxx (última dirección)
+# 
+# --- Prueba 3: Verificación del desplazamiento >>2 ---
+# Tiempo=245000: Address=0x00000000, ReadData=0x00500113
+# Address=0x00000000 -> Index=0 -> Data=0x00500113
+# Tiempo=255000: Address=0x00000004, ReadData=0x00c00193
+# Address=0x00000004 -> Index=1 -> Data=0x00c00193
+# Tiempo=265000: Address=0x00000008, ReadData=0xff718393
+# Address=0x00000008 -> Index=2 -> Data=0xff718393
+# 
+# --- Prueba 4: Direcciones límite ---
+# Tiempo=275000: Address=0x00000400, ReadData=0xxxxxxxxx
+# Address=0x00000400 (fuera de rango) -> Data=0xxxxxxxxx
+# 
 # === Fin de pruebas ===
-# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend_tb.v(76)
-#    Time: 80 ns  Iteration: 0  Instance: /Extend_tb
+# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory_tb.v(80)
+#    Time: 285 ns  Iteration: 0  Instance: /InstructionMemory_tb
 # 1
-# Break in Module Extend_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend_tb.v line 76
+# Break in Module InstructionMemory_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory_tb.v line 80
