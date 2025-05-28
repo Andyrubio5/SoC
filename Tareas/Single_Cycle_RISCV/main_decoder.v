@@ -24,14 +24,14 @@ reg [1:0] active_state;
 // Control logic based on opcode
 always @(*) begin
     // Default values
-    branch = 1'b0;
-    jump = 1'b0;
-    mem_write = 1'b0;
-    alu_src = 1'b0;
-    reg_write = 1'b0;
-    result_src = 2'b00;
-    imm_src = 2'b00;
-    alu_op = 2'b00;
+		branch = 0;
+		jump = 0;
+		mem_write = 0;
+		alu_src = 0;
+		reg_write = 0;
+		result_src = 2'b00;
+		imm_src = 2'b00;
+		alu_op = 2'b00;
     
     case(op)
         op_lw: begin         // Load word

@@ -14,7 +14,7 @@ module Single_Cycle_RISCV_tb;
     wire [WIDTH-1:0] pc_out;
     wire [WIDTH-1:0] alu_result;
 
-    // Instanciar el procesador (ajusta el nombre si es necesario)
+    // Instanciar el procesador
     Single_cycle_RISCV #(
         .WIDTH(WIDTH)
     ) uut (
@@ -22,6 +22,7 @@ module Single_Cycle_RISCV_tb;
         .rst(rst),
         .pc_out(pc_out),
         .alu_result(alu_result)
+        // Nota: no se conecta .instruction
     );
 
     // Generación de reloj
@@ -35,17 +36,16 @@ module Single_Cycle_RISCV_tb;
     initial begin
         $display("\n===== Simulación del procesador RISC-V - Híbrido =====");
 
-        // Inicialización
+        // Reset
         rst = 1;
-        #20;
+        #5;
         rst = 0;
 
-        // Esperar algunos ciclos de ejecución
-        #(CLK_PERIOD * 30);
+        // Esperar suficiente para ejecutar 21 instrucciones
+        #(CLK_PERIOD * 45);  // 45 ciclos = 450ns
 
         $display("\n==== Estado final de señales clave ====");
         $display("PC Final: 0x%h", pc_out);
-        $display("Instruccion final: 0x%h", uut.instruction);
         $display("Resultado ALU: 0x%h", alu_result);
         $display("RegWrite: %b", uut.RegWrite);
         $display("MemWrite: %b", uut.MemWrite);
@@ -59,11 +59,15 @@ module Single_Cycle_RISCV_tb;
         $display("\n===== Simulación finalizada =====");
         $finish;
     end
+	 
+	 // x
+always @(posedge clk) begin
+    $display("PC: 0x%h | Inst: 0x%h | ALU: 0x%h", uut.pc, uut.instruction, alu_result);
+    $display("RegWrite: %b | MemWrite: %b | ALUSrc: %b | ResultSrc: %b", 
+              uut.RegWrite, uut.MemWrite, uut.ALUSrc, uut.ResultSrc);
+    $display("ImmExt: 0x%h | ImmSrc: %b", uut.imm_extend, uut.imm_src);
+    $display("PCSrc: %b | PcNext: 0x%h\n", uut.PCSrc, uut.PcNext);
+end
 
-    // Monitoreo en tiempo real
-    initial begin
-        $monitor("Tiempo=%0t | PC=0x%h | Inst=0x%h | ALU=0x%h | RegWrite=%b | MemWrite=%b",
-            $time, pc_out, uut.instruction, alu_result, uut.RegWrite, uut.MemWrite);
-    end
 
 endmodule

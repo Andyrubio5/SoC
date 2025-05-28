@@ -32,10 +32,12 @@ wire RegWrite;                      // Register write control
 reg [WIDTH-1:0] pc;
 
 // PC Update
-always @(posedge clk) begin
-    pc <= PcNext;
+always @(posedge clk or posedge rst) begin
+    if (rst)
+        pc <= 0;
+    else
+        pc <= PcNext;
 end
-
 // Next PC logic
 assign PcNext = PCSrc ? pc_target : pc_plus_4;
 assign pc_out = pc;

@@ -24,6 +24,7 @@ module ControlUnit(
         .op(op),
         .clk(clk),
         .jump(Jump),
+		  .branch(Branch), 
         .mem_write(MemWrite),
         .alu_src(ALUSrc),
         .reg_write(RegWrite),
