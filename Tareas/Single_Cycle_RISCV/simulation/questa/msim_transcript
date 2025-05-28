@@ -167,3 +167,5 @@
 #    Time: 446 ns  Iteration: 0  Instance: /register_file_tb
 # 1
 # Break in Module register_file_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file_tb.v line 149
+# End time: 08:46:41 on May 28,2025, Elapsed time: 0:04:47
+# Errors: 0, Warnings: 1
