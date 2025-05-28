@@ -24,7 +24,7 @@ initial begin
 end
 
 always @(posedge clk) begin
-    if (WE3 && A3 != 5'b00000) begin  // No escribir en R0
+    if (WE3 && A3 != 0) begin  // No escribir en R0
         registers[A3] <= WD3;
     end
 end

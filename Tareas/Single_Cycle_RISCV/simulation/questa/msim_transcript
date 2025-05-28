@@ -24,116 +24,116 @@
 # Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_cycle_RISCV.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:15 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_cycle_RISCV.v 
-# -- Compiling module Single_cycle_RISCV
+# Start time: 13:30:19 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v 
+# -- Compiling module Single_Cycle_RISCV
 # 
 # Top level modules:
-# 	Single_cycle_RISCV
-# End time: 12:04:15 on May 28,2025, Elapsed time: 0:00:00
+# 	Single_Cycle_RISCV
+# End time: 13:30:19 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:15 on May 28,2025
+# Start time: 13:30:19 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v 
 # -- Compiling module register_file
 # 
 # Top level modules:
 # 	register_file
-# End time: 12:04:15 on May 28,2025, Elapsed time: 0:00:00
+# End time: 13:30:19 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:15 on May 28,2025
+# Start time: 13:30:19 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v 
 # -- Compiling module Extend
 # 
 # Top level modules:
 # 	Extend
-# End time: 12:04:15 on May 28,2025, Elapsed time: 0:00:00
+# End time: 13:30:19 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/data_memory.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:15 on May 28,2025
+# Start time: 13:30:19 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/data_memory.v 
 # -- Compiling module data_memory
 # 
 # Top level modules:
 # 	data_memory
-# End time: 12:04:15 on May 28,2025, Elapsed time: 0:00:00
+# End time: 13:30:19 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:15 on May 28,2025
+# Start time: 13:30:20 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 12:04:15 on May 28,2025, Elapsed time: 0:00:00
+# End time: 13:30:20 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:15 on May 28,2025
+# Start time: 13:30:20 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v 
 # -- Compiling module alu_decoder
 # 
 # Top level modules:
 # 	alu_decoder
-# End time: 12:04:15 on May 28,2025, Elapsed time: 0:00:00
+# End time: 13:30:20 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:16 on May 28,2025
+# Start time: 13:30:20 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v 
 # -- Compiling module ControlUnit
 # 
 # Top level modules:
 # 	ControlUnit
-# End time: 12:04:16 on May 28,2025, Elapsed time: 0:00:00
+# End time: 13:30:20 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:16 on May 28,2025
+# Start time: 13:30:20 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v 
 # -- Compiling module main_decoder
 # 
 # Top level modules:
 # 	main_decoder
-# End time: 12:04:16 on May 28,2025, Elapsed time: 0:00:00
+# End time: 13:30:20 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:16 on May 28,2025
+# Start time: 13:30:20 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v 
 # -- Compiling module InstructionMemory
 # 
 # Top level modules:
 # 	InstructionMemory
-# End time: 12:04:16 on May 28,2025, Elapsed time: 0:00:00
+# End time: 13:30:20 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:04:16 on May 28,2025
+# Start time: 13:30:20 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v 
 # -- Compiling module Single_Cycle_RISCV_tb
 # 
 # Top level modules:
 # 	Single_Cycle_RISCV_tb
-# End time: 12:04:16 on May 28,2025, Elapsed time: 0:00:00
+# End time: 13:30:20 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Single_Cycle_RISCV_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Single_Cycle_RISCV_tb 
-# Start time: 12:04:16 on May 28,2025
+# Start time: 13:30:20 on May 28,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.Single_Cycle_RISCV_tb(fast)
-# Loading work.Single_cycle_RISCV(fast)
+# Loading work.Single_Cycle_RISCV(fast)
 # Loading work.InstructionMemory(fast)
 # Loading work.register_file(fast)
 # Loading work.Extend(fast)
@@ -143,93 +143,113 @@
 # Loading work.main_decoder(fast)
 # Loading work.alu_decoder(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrc'. The port definition is at: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /Single_Cycle_RISCV_tb/uut/control_unit File: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_cycle_RISCV.v Line: 94
+#    Time: 0 ps  Iteration: 0  Instance: /Single_Cycle_RISCV_tb/uut/control_unit File: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v Line: 110
 # 
 # add wave *
-do C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/wave.do
-# onerror {resume}
-# quietly WaveActivateNextPane {} 0
-# add wave -noupdate -divider {Fetch Stage}
-# add wave -noupdate -radix hexadecimal /Single_Cycle_RISCV_tb/uut/pc
-# add wave -noupdate -radix hexadecimal /Single_Cycle_RISCV_tb/uut/instruction
-# add wave -noupdate -divider {Control Unit}
-# add wave -noupdate -radix binary /Single_Cycle_RISCV_tb/uut/RegWrite
-# add wave -noupdate -radix binary /Single_Cycle_RISCV_tb/uut/MemWrite
-# add wave -noupdate -radix binary /Single_Cycle_RISCV_tb/uut/ALUSrc
-# add wave -noupdate -radix binary /Single_Cycle_RISCV_tb/uut/ResultSrc
-# add wave -noupdate -radix binary /Single_Cycle_RISCV_tb/uut/PCSrc
-# add wave -noupdate -radix binary /Single_Cycle_RISCV_tb/uut/imm_src
-# add wave -noupdate -divider {ALU & Execution}
-# add wave -noupdate -radix hexadecimal /Single_Cycle_RISCV_tb/uut/alu_result
-# add wave -noupdate -radix hexadecimal /Single_Cycle_RISCV_tb/uut/imm_extend
-# add wave -noupdate -divider {Next PC Calculation}
-# add wave -noupdate -radix hexadecimal /Single_Cycle_RISCV_tb/uut/PcNext
-# TreeUpdate [SetDefaultTree]
-# WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-# quietly wave cursor active 0
-# configure wave -namecolwidth 150
-# configure wave -valuecolwidth 100
-# configure wave -justifyvalue left
-# configure wave -signalnamewidth 0
-# configure wave -snapdistance 10
-# configure wave -datasetprefix 0
-# configure wave -rowmargin 4
-# configure wave -childrowmargin 2
-# configure wave -gridoffset 0
-# configure wave -gridperiod 1
-# configure wave -griddelta 40
-# configure wave -timeline 0
-# configure wave -timelineunits ps
-# update
-# WaveRestoreZoom {0 ps} {1 ns}
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # 
-# ===== Simulación del procesador RISC-V - Híbrido =====
-# PC: 0x00000000 | Inst: 0x00500113 | ALU: 0x00000000
+# ===> Iniciando simulacion del procesador RISC-V...
+# PC: 0x00000000 | Inst: 0x00500113 | ALU: 0x00000005
 # RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
 # ImmExt: 0x00000005 | ImmSrc: 00
 # PCSrc: 0 | PcNext: 0x00000004
 # 
-# PC: 0x00000004 | Inst: 0x00c00193 | ALU: 0x00000000
+# WARNING: PC no está avanzando - PC: 0x00000000
+# PC: 0x00000000 | Inst: 0x00500113 | ALU: 0x00000005
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
+# ImmExt: 0x00000005 | ImmSrc: 00
+# PCSrc: 0 | PcNext: 0x00000004
+# 
+# PC: 0x00000004 | Inst: 0x00c00193 | ALU: 0x0000000c
 # RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
 # ImmExt: 0x0000000c | ImmSrc: 00
 # PCSrc: 0 | PcNext: 0x00000008
 # 
-# PC: 0x00000008 | Inst: 0xff718393 | ALU: 0x00000000
+# PC: 0x00000008 | Inst: 0xff718393 | ALU: 0x00000003
 # RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
 # ImmExt: 0xfffffff7 | ImmSrc: 00
 # PCSrc: 0 | PcNext: 0x0000000c
 # 
-# PC: 0x0000000c | Inst: 0x0023e233 | ALU: 0x00000000
+# PC: 0x0000000c | Inst: 0x0023e233 | ALU: 0x00000007
 # RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
 # ImmExt: 0x00000000 | ImmSrc: xx
 # PCSrc: 0 | PcNext: 0x00000010
 # 
-# PC: 0x00000010 | Inst: 0x0041f2b3 | ALU: 0x00000000
+# PC: 0x00000010 | Inst: 0x0041f2b3 | ALU: 0x00000004
 # RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
 # ImmExt: 0x00000000 | ImmSrc: xx
 # PCSrc: 0 | PcNext: 0x00000014
 # 
-# PC: 0x00000014 | Inst: 0x004282b3 | ALU: 0x00000000
+# PC: 0x00000014 | Inst: 0x004282b3 | ALU: 0x0000000b
 # RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
 # ImmExt: 0x00000000 | ImmSrc: xx
 # PCSrc: 0 | PcNext: 0x00000018
 # 
-# PC: 0x00000018 | Inst: 0x02728863 | ALU: 0x00000000
+# PC: 0x00000018 | Inst: 0x02728863 | ALU: 0x00000008
 # RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
 # ImmExt: 0x00000030 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000048
+# PCSrc: 0 | PcNext: 0x0000001c
 # 
-# PC: 0x00000048 | Inst: 0x00910133 | ALU: 0x00000000
+# PC: 0x0000001c | Inst: 0x0041a233 | ALU: 0x00000000
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000020
+# 
+# PC: 0x00000020 | Inst: 0x00020463 | ALU: 0x00000000
+# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
+# ImmExt: 0x00000008 | ImmSrc: 10
+# PCSrc: 1 | PcNext: 0x00000028
+# 
+# PC: 0x00000028 | Inst: 0x0023a233 | ALU: 0x00000001
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x0000002c
+# 
+# PC: 0x0000002c | Inst: 0x005203b3 | ALU: 0x0000000c
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000030
+# 
+# PC: 0x00000030 | Inst: 0x402383b3 | ALU: 0x00000007
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000034
+# 
+# PC: 0x00000034 | Inst: 0x0471aa23 | ALU: 0x00000060
+# RegWrite: 0 | MemWrite: 1 | ALUSrc: 1 | ResultSrc: x
+# ImmExt: 0x00000054 | ImmSrc: 01
+# PCSrc: 0 | PcNext: 0x00000038
+# 
+# PC: 0x00000038 | Inst: 0x06002103 | ALU: 0x00000060
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 1
+# ImmExt: 0x00000060 | ImmSrc: 00
+# PCSrc: 0 | PcNext: 0x0000003c
+# 
+# PC: 0x0000003c | Inst: 0x005104b3 | ALU: 0x00000012
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000040
+# 
+# PC: 0x00000040 | Inst: 0x008001ef | ALU: 0xxxxxxxxx
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: x | ResultSrc: 0
+# ImmExt: 0x00000008 | ImmSrc: 11
+# PCSrc: 0 | PcNext: 0x00000044
+# 
+# PC: 0x00000044 | Inst: 0x00100113 | ALU: 0x00000001
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
+# ImmExt: 0x00000001 | ImmSrc: 00
+# PCSrc: 0 | PcNext: 0x00000048
+# 
+# PC: 0x00000048 | Inst: 0x00910133 | ALU: 0x00000013
 # RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
 # ImmExt: 0x00000000 | ImmSrc: xx
 # PCSrc: 0 | PcNext: 0x0000004c
 # 
-# PC: 0x0000004c | Inst: 0x0221a023 | ALU: 0x00000020
+# PC: 0x0000004c | Inst: 0x0221a023 | ALU: 0xxxxxxxxx
 # RegWrite: 0 | MemWrite: 1 | ALUSrc: 1 | ResultSrc: x
 # ImmExt: 0x00000020 | ImmSrc: 01
 # PCSrc: 0 | PcNext: 0x00000050
@@ -244,184 +264,8 @@ do C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_
 # ImmExt: 0x00000000 | ImmSrc: 10
 # PCSrc: 1 | PcNext: 0x00000050
 # 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
 # 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
-# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
-# ImmExt: 0x00000000 | ImmSrc: 10
-# PCSrc: 1 | PcNext: 0x00000050
-# 
-# 
-# ==== Estado final de señales clave ====
-# PC Final: 0x00000050
-# Resultado ALU: 0x00000000
-# RegWrite: 0
-# MemWrite: 0
-# 
-# ==== Memoria de datos (primeros 64 bytes) ====
+# ==== Memoria de datos (0x000 a 0x00F) ====
 # Data_mem[0x000] = 0x00000000
 # Data_mem[0x001] = 0x00000000
 # Data_mem[0x002] = 0x00000000
@@ -438,18 +282,29 @@ do C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_
 # Data_mem[0x00d] = 0x00000000
 # Data_mem[0x00e] = 0x00000000
 # Data_mem[0x00f] = 0x00000000
-# 
-# ===== Simulación finalizada =====
-# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v(60)
-#    Time: 455 ns  Iteration: 0  Instance: /Single_Cycle_RISCV_tb
+# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v(49)
+#    Time: 215 ns  Iteration: 1  Instance: /Single_Cycle_RISCV_tb
 # 1
-# Break in Module Single_Cycle_RISCV_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v line 60
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Break in Module Single_Cycle_RISCV_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v line 49
+vlog *.v
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 13:30:37 on May 28,2025
+# vlog -reportprogress 300 *.v 
+# ** Error: (vlog-7) Failed to open design unit file "*.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 13:30:37 on May 28,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# c:/intelfpga_lite/23.1std/questa_fse/win64/vlog failed.
+vsim -voptargs="+acc" work.Single_Cycle_RISCV_tb
+# End time: 13:30:40 on May 28,2025, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" work.Single_Cycle_RISCV_tb 
+# Start time: 13:30:40 on May 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.Single_Cycle_RISCV_tb(fast)
-# Loading work.Single_cycle_RISCV(fast)
+# Loading work.Single_Cycle_RISCV(fast)
 # Loading work.InstructionMemory(fast)
 # Loading work.register_file(fast)
 # Loading work.Extend(fast)
@@ -459,9 +314,160 @@ restart
 # Loading work.main_decoder(fast)
 # Loading work.alu_decoder(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrc'. The port definition is at: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v(10).
-#    Time: 0 ps  Iteration: 0  Instance: /Single_Cycle_RISCV_tb/uut/control_unit File: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_cycle_RISCV.v Line: 94
-run
+#    Time: 0 ps  Iteration: 0  Instance: /Single_Cycle_RISCV_tb/uut/control_unit File: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v Line: 110
+
+add wave -divider "=== FETCH/EXECUTE ==="
+add wave -hex /Single_Cycle_RISCV_tb/uut.pc
+add wave -hex /Single_Cycle_RISCV_tb/uut.instruction
+add wave -hex /Single_Cycle_RISCV_tb/uut.alu_result
+add wave -hex /Single_Cycle_RISCV_tb/uut.PcNext
+
+add wave -divider "=== CONTROL ==="
+add wave      /Single_Cycle_RISCV_tb/uut.RegWrite
+add wave      /Single_Cycle_RISCV_tb/uut.MemWrite
+add wave      /Single_Cycle_RISCV_tb/uut.ALUSrc
+add wave      /Single_Cycle_RISCV_tb/uut.ResultSrc
+add wave      /Single_Cycle_RISCV_tb/uut.PCSrc
+add wave      /Single_Cycle_RISCV_tb/uut.Zero
+add wave -bin /Single_Cycle_RISCV_tb/uut.imm_src
+
+add wave -divider "=== INMEDIATOS ==="
+add wave -hex /Single_Cycle_RISCV_tb/uut.imm_extend
+
+run -all
 # 
-# ===== Simulación del procesador RISC-V - Híbrido =====
-# End time: 12:05:07 on May 28,2025, Elapsed time: 0:00:51
-# Errors: 0, Warnings: 2
+# ===> Iniciando simulacion del procesador RISC-V...
+# PC: 0x00000000 | Inst: 0x00500113 | ALU: 0x00000005
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
+# ImmExt: 0x00000005 | ImmSrc: 00
+# PCSrc: 0 | PcNext: 0x00000004
+# 
+# WARNING: PC no está avanzando - PC: 0x00000000
+# PC: 0x00000000 | Inst: 0x00500113 | ALU: 0x00000005
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
+# ImmExt: 0x00000005 | ImmSrc: 00
+# PCSrc: 0 | PcNext: 0x00000004
+# 
+# PC: 0x00000004 | Inst: 0x00c00193 | ALU: 0x0000000c
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
+# ImmExt: 0x0000000c | ImmSrc: 00
+# PCSrc: 0 | PcNext: 0x00000008
+# 
+# PC: 0x00000008 | Inst: 0xff718393 | ALU: 0x00000003
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
+# ImmExt: 0xfffffff7 | ImmSrc: 00
+# PCSrc: 0 | PcNext: 0x0000000c
+# 
+# PC: 0x0000000c | Inst: 0x0023e233 | ALU: 0x00000007
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000010
+# 
+# PC: 0x00000010 | Inst: 0x0041f2b3 | ALU: 0x00000004
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000014
+# 
+# PC: 0x00000014 | Inst: 0x004282b3 | ALU: 0x0000000b
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000018
+# 
+# PC: 0x00000018 | Inst: 0x02728863 | ALU: 0x00000008
+# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
+# ImmExt: 0x00000030 | ImmSrc: 10
+# PCSrc: 0 | PcNext: 0x0000001c
+# 
+# PC: 0x0000001c | Inst: 0x0041a233 | ALU: 0x00000000
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000020
+# 
+# PC: 0x00000020 | Inst: 0x00020463 | ALU: 0x00000000
+# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
+# ImmExt: 0x00000008 | ImmSrc: 10
+# PCSrc: 1 | PcNext: 0x00000028
+# 
+# PC: 0x00000028 | Inst: 0x0023a233 | ALU: 0x00000001
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x0000002c
+# 
+# PC: 0x0000002c | Inst: 0x005203b3 | ALU: 0x0000000c
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000030
+# 
+# PC: 0x00000030 | Inst: 0x402383b3 | ALU: 0x00000007
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000034
+# 
+# PC: 0x00000034 | Inst: 0x0471aa23 | ALU: 0x00000060
+# RegWrite: 0 | MemWrite: 1 | ALUSrc: 1 | ResultSrc: x
+# ImmExt: 0x00000054 | ImmSrc: 01
+# PCSrc: 0 | PcNext: 0x00000038
+# 
+# PC: 0x00000038 | Inst: 0x06002103 | ALU: 0x00000060
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 1
+# ImmExt: 0x00000060 | ImmSrc: 00
+# PCSrc: 0 | PcNext: 0x0000003c
+# 
+# PC: 0x0000003c | Inst: 0x005104b3 | ALU: 0x00000012
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x00000040
+# 
+# PC: 0x00000040 | Inst: 0x008001ef | ALU: 0xxxxxxxxx
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: x | ResultSrc: 0
+# ImmExt: 0x00000008 | ImmSrc: 11
+# PCSrc: 0 | PcNext: 0x00000044
+# 
+# PC: 0x00000044 | Inst: 0x00100113 | ALU: 0x00000001
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 1 | ResultSrc: 0
+# ImmExt: 0x00000001 | ImmSrc: 00
+# PCSrc: 0 | PcNext: 0x00000048
+# 
+# PC: 0x00000048 | Inst: 0x00910133 | ALU: 0x00000013
+# RegWrite: 1 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: 0
+# ImmExt: 0x00000000 | ImmSrc: xx
+# PCSrc: 0 | PcNext: 0x0000004c
+# 
+# PC: 0x0000004c | Inst: 0x0221a023 | ALU: 0xxxxxxxxx
+# RegWrite: 0 | MemWrite: 1 | ALUSrc: 1 | ResultSrc: x
+# ImmExt: 0x00000020 | ImmSrc: 01
+# PCSrc: 0 | PcNext: 0x00000050
+# 
+# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
+# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
+# ImmExt: 0x00000000 | ImmSrc: 10
+# PCSrc: 1 | PcNext: 0x00000050
+# 
+# PC: 0x00000050 | Inst: 0x00210063 | ALU: 0x00000000
+# RegWrite: 0 | MemWrite: 0 | ALUSrc: 0 | ResultSrc: x
+# ImmExt: 0x00000000 | ImmSrc: 10
+# PCSrc: 1 | PcNext: 0x00000050
+# 
+# 
+# ==== Memoria de datos (0x000 a 0x00F) ====
+# Data_mem[0x000] = 0x00000000
+# Data_mem[0x001] = 0x00000000
+# Data_mem[0x002] = 0x00000000
+# Data_mem[0x003] = 0x00000000
+# Data_mem[0x004] = 0x00000000
+# Data_mem[0x005] = 0x00000000
+# Data_mem[0x006] = 0x00000000
+# Data_mem[0x007] = 0x00000000
+# Data_mem[0x008] = 0x00000000
+# Data_mem[0x009] = 0x00000000
+# Data_mem[0x00a] = 0x00000000
+# Data_mem[0x00b] = 0x00000000
+# Data_mem[0x00c] = 0x00000000
+# Data_mem[0x00d] = 0x00000000
+# Data_mem[0x00e] = 0x00000000
+# Data_mem[0x00f] = 0x00000000
+# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v(49)
+#    Time: 215 ns  Iteration: 1  Instance: /Single_Cycle_RISCV_tb
+# 1
+# Break in Module Single_Cycle_RISCV_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v line 49
+

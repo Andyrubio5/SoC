@@ -2,72 +2,60 @@
 
 module Single_Cycle_RISCV_tb;
 
-    // Parámetros
-    parameter WIDTH = 32;
-    parameter CLK_PERIOD = 10;
+    localparam WIDTH = 32;
+    localparam CLK_PERIOD = 10;
+    localparam NUM_INSTRUCTIONS = 21;
 
-    // Entradas
     reg clk;
     reg rst;
+    integer j;
 
-    // Salidas del procesador
-    wire [WIDTH-1:0] pc_out;
-    wire [WIDTH-1:0] alu_result;
-
-    // Instanciar el procesador
-    Single_cycle_RISCV #(
+    // Instancia del procesador
+    Single_Cycle_RISCV #(
         .WIDTH(WIDTH)
-    ) uut (
+    ) uut (   // Cambié a `uut` para que coincida con tu bloque always
         .clk(clk),
         .rst(rst),
-        .pc_out(pc_out),
-        .alu_result(alu_result)
-        // Nota: no se conecta .instruction
+        .pc_out(),       
+        .alu_result()
     );
 
-    // Generación de reloj
+    // Generador de reloj
+    always #(CLK_PERIOD/2) clk = ~clk;
+
+    // Test principal
     initial begin
+        $display("\n===> Iniciando simulacion del procesador RISC-V...");
+        $dumpfile("riscv.vcd");
+        $dumpvars(0, Single_Cycle_RISCV_tb);
+
         clk = 0;
-        forever #(CLK_PERIOD/2) clk = ~clk;
-    end
-
-    // Bloque de prueba
-    integer j;
-    initial begin
-        $display("\n===== Simulación del procesador RISC-V - Híbrido =====");
-
-        // Reset
         rst = 1;
-        #5;
+        #(CLK_PERIOD);
         rst = 0;
 
-        // Esperar suficiente para ejecutar 21 instrucciones
-        #(CLK_PERIOD * 45);  // 45 ciclos = 450ns
+        repeat (NUM_INSTRUCTIONS) @(posedge clk);
 
-        $display("\n==== Estado final de señales clave ====");
-        $display("PC Final: 0x%h", pc_out);
-        $display("Resultado ALU: 0x%h", alu_result);
-        $display("RegWrite: %b", uut.RegWrite);
-        $display("MemWrite: %b", uut.MemWrite);
+        if (uut.instruction === 32'hxxxxxxxx || ^uut.instruction === 1'bx) begin
+            $display("\n*** Fin del programa: Instruccion no valida detectada ***");
+            $display("PC: 0x%h | Instruction: 0x%h", uut.pc, uut.instruction);
+        end
 
-        // Dump de memoria de datos
-        $display("\n==== Memoria de datos (primeros 64 bytes) ====");
+        $display("\n==== Memoria de datos (0x000 a 0x00F) ====");
         for (j = 0; j < 16; j = j + 1) begin
             $display("Data_mem[0x%03h] = 0x%08h", j, uut.data_mem.memory[j]);
         end
 
-        $display("\n===== Simulación finalizada =====");
         $finish;
     end
-	 
-	 // x
-always @(posedge clk) begin
-    $display("PC: 0x%h | Inst: 0x%h | ALU: 0x%h", uut.pc, uut.instruction, alu_result);
-    $display("RegWrite: %b | MemWrite: %b | ALUSrc: %b | ResultSrc: %b", 
-              uut.RegWrite, uut.MemWrite, uut.ALUSrc, uut.ResultSrc);
-    $display("ImmExt: 0x%h | ImmSrc: %b", uut.imm_extend, uut.imm_src);
-    $display("PCSrc: %b | PcNext: 0x%h\n", uut.PCSrc, uut.PcNext);
-end
 
+    // Monitoreo por ciclo
+    always @(posedge clk) begin
+        $display("PC: 0x%h | Inst: 0x%h | ALU: 0x%h", uut.pc, uut.instruction, uut.alu_result);
+        $display("RegWrite: %b | MemWrite: %b | ALUSrc: %b | ResultSrc: %b", 
+                  uut.RegWrite, uut.MemWrite, uut.ALUSrc, uut.ResultSrc);
+        $display("ImmExt: 0x%h | ImmSrc: %b", uut.imm_extend, uut.imm_src);
+        $display("PCSrc: %b | PcNext: 0x%h\n", uut.PCSrc, uut.PcNext);
+    end
 
 endmodule
