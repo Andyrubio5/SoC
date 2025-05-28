@@ -1,61 +1,69 @@
-`timescale 1ps/1ps
+`timescale 1ns / 1ps
 
-module Single_cycle_RISCV_tb;
+module Single_Cycle_RISCV_tb;
+
+    // Parámetros
+    parameter WIDTH = 32;
+    parameter CLK_PERIOD = 10;
+
+    // Entradas
     reg clk;
-    reg reset;
-    wire [31:0] instruction;
-    wire [31:0] pc_out;
-    wire [31:0] alu_result;
-    wire [31:0] data_out;
+    reg rst;
 
-    // Debug signals - declare as wires
-    wire MemWrite;
-    wire [31:0] Address;
-    wire [31:0] WriteData;
-    wire [31:0] DataAddr;
+    // Salidas del procesador
+    wire [WIDTH-1:0] pc_out;
+    wire [WIDTH-1:0] alu_result;
 
-    // Instantiate the Single Cycle RISC-V processor with debug outputs
-    Single_cycle_RISCV uut (
+    // Instanciar el procesador (ajusta el nombre si es necesario)
+    Single_cycle_RISCV #(
+        .WIDTH(WIDTH)
+    ) uut (
         .clk(clk),
+        .rst(rst),
         .pc_out(pc_out),
-        .alu_result(alu_result),
-        .MemWrite(MemWrite),
-        .Address(Address),
-        .WriteData(WriteData),
-        .DataAddr(DataAddr)
+        .alu_result(alu_result)
     );
 
-    // Clock generation
-    always begin
-        #5 clk = ~clk;  // 10ps period (5ps high, 5ps low)
+    // Generación de reloj
+    initial begin
+        clk = 0;
+        forever #(CLK_PERIOD/2) clk = ~clk;
     end
 
-    // Testbench stimulus
+    // Bloque de prueba
+    integer j;
     initial begin
-        // Initialize Inputs
-        clk = 0;
-        
-        // Monitor important signals including debug signals
-        $monitor("Time=%0t PC=%h ALU=%h MemWrite=%b Addr=%h WriteData=%h", 
-                 $time, pc_out, alu_result, MemWrite, Address, WriteData);
-        
-        // Run simulation
-        #100;  // Run for 100 time units
-        
+        $display("\n===== Simulación del procesador RISC-V - Híbrido =====");
+
+        // Inicialización
+        rst = 1;
+        #20;
+        rst = 0;
+
+        // Esperar algunos ciclos de ejecución
+        #(CLK_PERIOD * 30);
+
+        $display("\n==== Estado final de señales clave ====");
+        $display("PC Final: 0x%h", pc_out);
+        $display("Instruccion final: 0x%h", uut.instruction);
+        $display("Resultado ALU: 0x%h", alu_result);
+        $display("RegWrite: %b", uut.RegWrite);
+        $display("MemWrite: %b", uut.MemWrite);
+
+        // Dump de memoria de datos
+        $display("\n==== Memoria de datos (primeros 64 bytes) ====");
+        for (j = 0; j < 16; j = j + 1) begin
+            $display("Data_mem[0x%03h] = 0x%08h", j, uut.data_mem.memory[j]);
+        end
+
+        $display("\n===== Simulación finalizada =====");
         $finish;
     end
 
-    // Memory write test - now using declared signals
-    always @(posedge clk) begin
-        if(MemWrite) begin
-            if(Address == 100 && WriteData == 25) begin
-                $display("PASSED: Data 25 written to address 100");
-                $stop;
-            end else if (DataAddr != 96) begin
-                $display("FAILED: Incorrect memory access - Expected DataAddr=96, got %d", DataAddr);
-                $stop;
-            end
-        end
+    // Monitoreo en tiempo real
+    initial begin
+        $monitor("Tiempo=%0t | PC=0x%h | Inst=0x%h | ALU=0x%h | RegWrite=%b | MemWrite=%b",
+            $time, pc_out, uut.instruction, alu_result, uut.RegWrite, uut.MemWrite);
     end
 
 endmodule

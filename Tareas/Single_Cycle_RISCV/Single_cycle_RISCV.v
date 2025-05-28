@@ -1,9 +1,10 @@
 module Single_cycle_RISCV #(
     parameter WIDTH = 32
 )(
-    input  wire clk,                    // Clock signal
-    output wire [WIDTH-1:0] pc_out,     // Program counter output
-    output wire [WIDTH-1:0] alu_result  // ALU result output
+    input clk,                    // Clock signal
+	 input rst,
+    output [WIDTH-1:0] pc_out,     // Program counter output
+    output [WIDTH-1:0] alu_result  // ALU result output	
 );
 
 // Wire declarations

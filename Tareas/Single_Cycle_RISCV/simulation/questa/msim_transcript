@@ -24,36 +24,36 @@
 # Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 10:55:25 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v 
-# -- Compiling module main_decoder
+# Start time: 11:29:53 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v 
+# -- Compiling module InstructionMemory
 # 
 # Top level modules:
-# 	main_decoder
-# End time: 10:55:25 on May 28,2025, Elapsed time: 0:00:00
+# 	InstructionMemory
+# End time: 11:29:53 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 10:55:25 on May 28,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v 
-# -- Compiling module tb_main_decoder
+# Start time: 11:29:53 on May 28,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory_tb.v 
+# -- Compiling module InstructionMemory_tb
 # 
 # Top level modules:
-# 	tb_main_decoder
-# End time: 10:55:25 on May 28,2025, Elapsed time: 0:00:00
+# 	InstructionMemory_tb
+# End time: 11:29:53 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_main_decoder
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_main_decoder 
-# Start time: 10:55:26 on May 28,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  InstructionMemory_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" InstructionMemory_tb 
+# Start time: 11:29:53 on May 28,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.tb_main_decoder(fast)
-# Loading work.main_decoder(fast)
+# Loading work.InstructionMemory_tb(fast)
+# Loading work.InstructionMemory(fast)
 # 
 # add wave *
 # view structure
@@ -61,19 +61,32 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# 
-# ===== Testbench Main Decoder =====
-#  Time |  op     | Instr | regW | memW | aluS | resS | immS | aluOP | brch | jump 
-# ------------------------------------------------------------------------
-#  2000 | 0000011 |              lw |   1   |   0   |   1   |  01  |  00  |  00   |  0   |  0
-#  4000 | 0100011 |              sw |   0   |   1   |   1   |  xx  |  01  |  00   |  0   |  0
-#  6000 | 0110011 |           rtype |   1   |   0   |   0   |  00  |  xx  |  10   |  0   |  0
-#  8000 | 1100011 |             beq |   0   |   0   |   0   |  xx  |  10  |  01   |  1   |  0
-#  10000 | 0010011 |           itype |   1   |   0   |   1   |  00  |  00  |  11   |  0   |  0
-#  12000 | 1101111 |             jal |   1   |   0   |   x   |  10  |  11  |  xx   |  0   |  1
-# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v(74)
-#    Time: 12 ns  Iteration: 0  Instance: /tb_main_decoder
+# ==== Test de InstructionMemory ====
+# Address = 0x00000000 | Instruction = 0x00500113
+# Address = 0x00000004 | Instruction = 0x00c00193
+# Address = 0x00000008 | Instruction = 0xff718393
+# Address = 0x0000000c | Instruction = 0x0023e233
+# Address = 0x00000010 | Instruction = 0x0041f2b3
+# Address = 0x00000014 | Instruction = 0x004282b3
+# Address = 0x00000018 | Instruction = 0x02728863
+# Address = 0x0000001c | Instruction = 0x0041a233
+# Address = 0x00000020 | Instruction = 0x00020463
+# Address = 0x00000024 | Instruction = 0x00000293
+# Address = 0x00000028 | Instruction = 0x0023a233
+# Address = 0x0000002c | Instruction = 0x005203b3
+# Address = 0x00000030 | Instruction = 0x402383b3
+# Address = 0x00000034 | Instruction = 0x0471aa23
+# Address = 0x00000038 | Instruction = 0x06002103
+# Address = 0x0000003c | Instruction = 0x005104b3
+# Address = 0x00000040 | Instruction = 0x008001ef
+# Address = 0x00000044 | Instruction = 0x00100113
+# Address = 0x00000048 | Instruction = 0x00910133
+# Address = 0x0000004c | Instruction = 0x0221a023
+# Address = 0x00000050 | Instruction = 0x00210063
+# ==== Fin del test ====
+# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory_tb.v(28)
+#    Time: 105 ns  Iteration: 0  Instance: /InstructionMemory_tb
 # 1
-# Break in Module tb_main_decoder at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v line 74
-# End time: 11:00:09 on May 28,2025, Elapsed time: 0:04:43
+# Break in Module InstructionMemory_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory_tb.v line 28
+# End time: 11:32:05 on May 28,2025, Elapsed time: 0:02:12
 # Errors: 0, Warnings: 1
