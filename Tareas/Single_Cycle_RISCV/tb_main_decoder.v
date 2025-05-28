@@ -31,47 +31,53 @@ module tb_main_decoder();
     );
     
     // Clock generation
-    always begin
-        
-        
-        #1 clk = ~clk;
-    end
+    always #1 clk = ~clk;
     
     initial begin
         clk = 0;
-        #10;
-        // Initialize Inputs
-        op = 0;
-        
-        // Wait for global reset
-        #10;
-        
-        // Test case 1: Load Word (LW)
+
+        $display("\n===== Testbench Main Decoder =====");
+        $display(" Time |  op     | Instr | regW | memW | aluS | resS | immS | aluOP | brch | jump ");
+        $display("------------------------------------------------------------------------");
+
+        // Caso 1: lw
         op = 7'b0000011;
-        #10;
-        
-        // Test case 2: Store Word (SW)
+        #2;
+        print_signals("lw");
+
+        // Caso 2: sw
         op = 7'b0100011;
-        #10;
-        
-        // Test case 3: R-type
+        #2;
+        print_signals("sw");
+
+        // Caso 3: r-type
         op = 7'b0110011;
-        #10;
-        
-        // Test case 4: Branch Equal (BEQ)
+        #2;
+        print_signals("rtype");
+
+        // Caso 4: beq
         op = 7'b1100011;
-        #10;
-        
-        // Test case 5: I-type ALU
+        #2;
+        print_signals("beq");
+
+        // Caso 5: itype
         op = 7'b0010011;
-        #10;
-        
-        // Test case 6: Jump and Link (JAL)
+        #2;
+        print_signals("itype");
+
+        // Caso 6: jal
         op = 7'b1101111;
-        #10;
-        
-        // Finish simulation
+        #2;
+        print_signals("jal");
+
+        // Fin de simulación
         $finish;
     end
-    
+
+    task print_signals(input [15*8:1] instr_name);
+        $display(" %4t | %b | %s |   %b   |   %b   |   %b   |  %b  |  %b  |  %b   |  %b   |  %b",
+            $time, op, instr_name, reg_write, mem_write, alu_src,
+            result_src, imm_src, alu_op, branch, jump);
+    endtask
+
 endmodule

@@ -26,29 +26,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 10:50:59 on May 28,2025
+# Start time: 10:55:25 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v 
 # -- Compiling module main_decoder
 # 
 # Top level modules:
 # 	main_decoder
-# End time: 10:50:59 on May 28,2025, Elapsed time: 0:00:00
+# End time: 10:55:25 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 10:50:59 on May 28,2025
+# Start time: 10:55:25 on May 28,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v 
 # -- Compiling module tb_main_decoder
 # 
 # Top level modules:
 # 	tb_main_decoder
-# End time: 10:50:59 on May 28,2025, Elapsed time: 0:00:00
+# End time: 10:55:25 on May 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_main_decoder
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_main_decoder 
-# Start time: 10:50:59 on May 28,2025
+# Start time: 10:55:26 on May 28,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -61,7 +61,19 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# 
+# ===== Testbench Main Decoder =====
+#  Time |  op     | Instr | regW | memW | aluS | resS | immS | aluOP | brch | jump 
+# ------------------------------------------------------------------------
+#  2000 | 0000011 |              lw |   1   |   0   |   1   |  01  |  00  |  00   |  0   |  0
+#  4000 | 0100011 |              sw |   0   |   1   |   1   |  xx  |  01  |  00   |  0   |  0
+#  6000 | 0110011 |           rtype |   1   |   0   |   0   |  00  |  xx  |  10   |  0   |  0
+#  8000 | 1100011 |             beq |   0   |   0   |   0   |  xx  |  10  |  01   |  1   |  0
+#  10000 | 0010011 |           itype |   1   |   0   |   1   |  00  |  00  |  11   |  0   |  0
+#  12000 | 1101111 |             jal |   1   |   0   |   x   |  10  |  11  |  xx   |  0   |  1
 # ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v(74)
-#    Time: 80 ns  Iteration: 0  Instance: /tb_main_decoder
+#    Time: 12 ns  Iteration: 0  Instance: /tb_main_decoder
 # 1
 # Break in Module tb_main_decoder at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v line 74
+# End time: 11:00:09 on May 28,2025, Elapsed time: 0:04:43
+# Errors: 0, Warnings: 1
