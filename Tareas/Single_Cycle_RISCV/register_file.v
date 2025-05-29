@@ -13,6 +13,11 @@ module register_file (
 
     // Banco de 32 registros de 32 bits
     reg [31:0] registers [31:0];
+	 
+always @(posedge clk) begin
+    if (WE3) begin
+    end
+end
 
 // Inicialización y manejo de R0
 integer i; // Declarar la variable fuera del bucle

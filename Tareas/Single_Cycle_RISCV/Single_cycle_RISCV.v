@@ -1,4 +1,3 @@
-
 module Single_Cycle_RISCV #(
     parameter WIDTH = 32
 )(
@@ -45,17 +44,11 @@ always @(posedge clk or posedge rst) begin
         prev_pc2 <= prev_pc;
         prev_pc <= pc;
         pc <= PcNext;
-        
-        // Debug: verificar si PC está avanzando correctamente
-        if (pc == prev_pc && !PCSrc) begin
-            $display("WARNING: PC no está avanzando - PC: 0x%h", pc);
-        end
     end
 end
 
 // Next PC logic - usando assign (más limpio)
 assign PcNext = PCSrc ? pc_target : pc_plus_4;
-
 assign pc_out = pc;
 
 // Instruction Memory

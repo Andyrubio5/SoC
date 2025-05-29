@@ -1,33 +1,35 @@
-module data_memory (
-    input [31:0] A,         // Dirección de acceso
-    input [31:0] WD,        // Dato a escribir
-    input clk,              // Reloj
-    input WE,               // Write Enable
-    output reg [31:0] RD    // Dato leído
+module data_memory #(parameter DATA_WIDTH = 32) (
+    input clk,         // Clock signal
+    input WE,          // Write Enable signal (1 = write, 0 = read)
+    input [DATA_WIDTH-1:0] A,    
+    input [DATA_WIDTH-1:0] WD,  
+    output [DATA_WIDTH-1:0] RD   
 );
 
-    // Memoria de 1024 palabras de 32 bits (4KB)
-    reg [31:0] memory [0:1023];
+reg [DATA_WIDTH-1:0] Data_mem [1023:0];
 
-    integer i;
-    initial begin
-        for (i = 0; i < 1024; i = i + 1)
-            memory[i] = 32'b0;
-    end
 
-    // Escritura sincrónica: solo si WE está activo
-    always @(posedge clk) begin
-        if (WE && A[11:2] < 1024) begin
-            memory[A[11:2]] <= WD; // acceso alineado a palabra (4 bytes)
-        end
+// Añadir debug
+always @(posedge clk) begin
+    if (WE) begin
+        $display("Memory Write - Time: %0t Addr: %h Data: %h", $time, A, WD);
     end
+end
 
-    // Lectura combinacional con protección de rango
-    always @(*) begin
-        if (A[11:2] < 1024)
-            RD = memory[A[11:2]];
-        else
-            RD = 32'b0; // valor por defecto si la dirección es inválida
+integer i;
+initial begin
+    for (i = 0; i < 1024; i = i + 1) begin
+        Data_mem[i] = 32'h00000000;
     end
+end
+
+
+assign RD = Data_mem[A[9:0]];
+
+always @(posedge clk) begin
+    if (WE) begin
+        Data_mem[A[9:0]] <= WD;
+    end
+end
 
 endmodule
