@@ -1,83 +1,90 @@
 `timescale 1ns / 1ps
 
-module tb_main_decoder();
+module tb_main_decoder;
+  // señales de estímulo
+  reg        clk;
+  reg  [6:0] op;
+  // salidas del main_decoder
+  wire       Jump;
+  wire       Branch;
+  wire       MemWrite;
+  wire       ALUSrc;
+  wire       RegWrite;
+  wire [1:0] ResultSrc;
+  wire [1:0] ImmSrc;
+  wire [1:0] ALUOp;
 
-    // Inputs
-    reg [6:0] op;
-    reg clk;
-    
-    // Outputs
-    wire branch;
-    wire jump;
-    wire mem_write;
-    wire alu_src;
-    wire reg_write;
-    wire [1:0] result_src;
-    wire [1:0] imm_src;
-    wire [1:0] alu_op;
-    
-    // Instantiate the Unit Under Test (UUT)
-    main_decoder uut (
-        .op(op),
-        .clk(clk),
-        .branch(branch),
-        .jump(jump),
-        .mem_write(mem_write),
-        .alu_src(alu_src),
-        .reg_write(reg_write),
-        .result_src(result_src),
-        .imm_src(imm_src),
-        .alu_op(alu_op)
-    );
-    
-    // Clock generation
-    always #1 clk = ~clk;
-    
-    initial begin
-        clk = 0;
+  // lista de instrucciones .hex a probar
+  reg [31:0] instructions [0:20];
+  integer    i;
 
-        $display("\n===== Testbench Main Decoder =====");
-        $display(" Time |  op     | Instr | regW | memW | aluS | resS | immS | aluOP | brch | jump ");
-        $display("------------------------------------------------------------------------");
+  // Instancia del main_decoder
+  main_decoder uut (
+    .op(op),
+    .clk(clk),
+    .jump(Jump),
+    .branch(Branch),
+    .mem_write(MemWrite),
+    .alu_src(ALUSrc),
+    .reg_write(RegWrite),
+    .result_src(ResultSrc),
+    .imm_src(ImmSrc),
+    .alu_op(ALUOp)
+  );
 
-        // Caso 1: lw
-        op = 7'b0000011;
-        #2;
-        print_signals("lw");
+  // Generador de reloj
+  initial clk = 0;
+  always #5 clk = ~clk;
 
-        // Caso 2: sw
-        op = 7'b0100011;
-        #2;
-        print_signals("sw");
+  initial begin
+    // Cargar las 21 instrucciones
+    instructions[0]  = 32'h00500113;
+    instructions[1]  = 32'h00C00193;
+    instructions[2]  = 32'hFF718393;
+    instructions[3]  = 32'h0023E233;
+    instructions[4]  = 32'h0041F2B3;
+    instructions[5]  = 32'h004282B3;
+    instructions[6]  = 32'h02728863;
+    instructions[7]  = 32'h0041A233;
+    instructions[8]  = 32'h00020463;
+    instructions[9]  = 32'h00000293;
+    instructions[10] = 32'h0023A233;
+    instructions[11] = 32'h005203B3;
+    instructions[12] = 32'h402383B3;
+    instructions[13] = 32'h0471AA23;
+    instructions[14] = 32'h06002103;
+    instructions[15] = 32'h005104B3;
+    instructions[16] = 32'h008001EF;
+    instructions[17] = 32'h00100113;
+    instructions[18] = 32'h00910133;
+    instructions[19] = 32'h0221A023;
+    instructions[20] = 32'h00210063;
 
-        // Caso 3: r-type
-        op = 7'b0110011;
-        #2;
-        print_signals("rtype");
+    // Pequeño retardo para estabilizar
+    #10;
 
-        // Caso 4: beq
-        op = 7'b1100011;
-        #2;
-        print_signals("beq");
+    // Cabecera de la tabla
+    $display("| Instruction  | Opcode  | RegWrite | ALUSrc | MemWrite | ResultSrc | Branch | ALUOp |");
+    $display("|--------------|---------|----------|--------|----------|-----------|--------|-------|");
 
-        // Caso 5: itype
-        op = 7'b0010011;
-        #2;
-        print_signals("itype");
+    // Para cada instrucción:
+    for (i = 0; i < 21; i = i + 1) begin
+      // Extraer los 7 bits menos significativos
+      op = instructions[i][6:0];
+      #10;  // un ciclo de reloj
 
-        // Caso 6: jal
-        op = 7'b1101111;
-        #2;
-        print_signals("jal");
-
-        // Fin de simulación
-        $finish;
+      $display("| 0x%08h | %07b |    %b     |   %b    |    %b     |     %b      |   %b    |  %b   |",
+               instructions[i],
+               op,
+               RegWrite,
+               ALUSrc,
+               MemWrite,
+               ResultSrc,
+               Branch,
+               ALUOp
+      );
     end
 
-    task print_signals(input [15*8:1] instr_name);
-        $display(" %4t | %b | %s |   %b   |   %b   |   %b   |  %b  |  %b  |  %b   |  %b   |  %b",
-            $time, op, instr_name, reg_write, mem_write, alu_src,
-            result_src, imm_src, alu_op, branch, jump);
-    endtask
-
+    $finish;
+  end
 endmodule

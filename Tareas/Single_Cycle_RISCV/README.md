@@ -7,37 +7,56 @@ Este proyecto implementa una arquitectura de  un microprocesador RISCV que ejecu
 - **Arquitectura**: Ciclo único (Single-Cycle)
 - **ISA**: RISC-V RV32I (Base Integer Instruction Set)
 - **Lenguaje de descripción**: Verilog
-- **Bloques**:
-  -Program Counter
-  -Instruction Memory
-  -Register File
-  -Immediate Generator 
-  -ALU Control
-  -ALU
-  -Control Unit
-  -Data Memory
 
 
 ## Estructura del Proyecto
 
 - `src/`: Contiene los módulos Verilog que definen la arquitectura del procesador.
 - `testbench/`: Incluye los bancos de pruebas para verificar el funcionamiento de cada módulo y del procesador completo.
-- `programs/`: Programas de prueba escritos en ensamblador RISC-V para validar la ejecución de instrucciones.
+- `programs/`: Programas de prueba escritos en ensamblador RISC-V para validar la ejecución de instrucciones.}
 
-## Instrucciones Implementadas
+## Módulos del Procesador RISC-V (Single Cycle)
 
-El procesador soporta un subconjunto de instrucciones encontrados en el archivo "instructions.hex"
+| Módulo              | Función principal                                                                 |
+|---------------------|------------------------------------------------------------------------------------|
+| `ProgramCounter`    | Mantiene la dirección de la instrucción actual.                                   |
+| `InstructionMemory` | Memoria ROM que almacena el conjunto de instrucciones del programa.               |
+| `RegisterFile`      | Banco de registros (32 registros de 32 bits), con dos lecturas y una escritura.   |
+| `ImmediateGenerator`| Extrae e interpreta los campos inmediatos según el tipo de instrucción (I, S, B…).|
+| `ALUControl`        | Genera la señal de operación de la ALU a partir de la instrucción.                |
+| `ALU`               | Unidad lógica-aritmética que ejecuta operaciones según la instrucción.            |
+| `ControlUnit`       | Genera señales de control globales según el opcode.                               |
+| `DataMemory`        | Memoria RAM para operaciones de carga/almacenamiento.                             |
 
-| .hex instruction | op      | instruction        | RegWrite | AluSrc | MemWrite | ResultSrc | Branch | ALUOP |
-|------------------|---------|--------------------|----------|--------|-----------|------------|--------|--------|
-| `00500113`       | 0010011 | AddI x2, x0, 5     |    1     |   1    |     0     |     0      |   0    |   10   |
-| `00C00193`       | 0010011 | AddI x3, x0, 12    |    1     |   1    |     0     |     0      |   0    |   10   |
-| `FF718393`       | 0010011 | AddI x7, x3, -9    |    1     |   1    |     0     |     0      |   0    |   10   |
-| `0023E233`       | 0110011 | OR x4, x7, x2      |    1     |   0    |     0     |     0      |   0    |   10   |
-| `0041F2B3`       | 0110011 | AND x5, x3, x4     |    1     |   0    |     0     |     0      |   0    |   10   |
-| `004282B3`       | 0110011 | ADD x5, x5, x4     |    1     |   0    |     0     |     0      |   0    |   10   |
-| `02728863`       | 1100011 | BEQ x5, x7, offset |    0     |   0    |     0     |     0      |   1    |   01   |
-| `0041A233`       | 0100011 | SW x4, 0(x3)       |    0     |   1    |     1     |     0      |   0    |   00   |
-| `00020463`       | 1100011 | BEQ x4, x0, offset |    0     |   0    |     0     |     0      |   1    |   01   |
-| `00000293`       | 0010011 | AddI x5, x0, 0     |    1     |   1    |     0     |     0      |   0    |   10   |
+## Instrucciones Implementadas En El Main_Decoder
+El main decoder es el encargado de traducir el opcode a una serie de señales de control que determinan como se debe ejecutar la instruccion.
+
+### Salida correspondiente del Main_Decoder
+| # | .hex instruction |   op    |     instruction      | RegWrite | AluSrc | MemWrite | ResultSrc | Branch | Jump | ImmSrc | ALUOP |
+|---|------------------|---------|----------------------|:--------:|:------:|:--------:|:---------:|:------:|:----:|:------:|:-----:|
+| 1 | `00500113`       | 0010011 | ADDI x2, x0, 5       |    1     |   1    |    0     |    00     |   0    |  0   |  00    |  11   |
+| 2 | `00C00193`       | 0010011 | ADDI x3, x0, 12      |    1     |   1    |    0     |    00     |   0    |  0   |  00    |  11   |
+| 3 | `FF718393`       | 0010011 | ADDI x7, x3, -9      |    1     |   1    |    0     |    00     |   0    |  0   |  00    |  11   |
+| 4 | `0023E233`       | 0110011 | OR   x4, x7, x2      |    1     |   0    |    0     |    00     |   0    |  0   |   X    |  10   |
+| 5 | `0041F2B3`       | 0110011 | AND  x5, x3, x4      |    1     |   0    |    0     |    00     |   0    |  0   |   X    |  10   |
+| 6 | `004282B3`       | 0110011 | ADD  x5, x5, x4      |    1     |   0    |    0     |    00     |   0    |  0   |   X    |  10   |
+| 7 | `02728863`       | 1100011 | BEQ  x5, x7, 48      |    0     |   0    |    0     |    X      |   1    |  0   |  10    |  01   |
+| 8 | `0041A233`       | 0110011 | SLT  x4, x3, x4      |    1     |   0    |    0     |    00     |   0    |  0   |   X    |  10   |
+| 9 | `00020463`       | 1100011 | BEQ  x4, x0, 8       |    0     |   0    |    0     |    X      |   1    |  0   |  10    |  01   |
+|10 | `00000293`       | 0010011 | ADDI x5, x0, 0       |    1     |   1    |    0     |    00     |   0    |  0   |  00    |  11   |
+|11 | `0023A233`       | 0110011 | SLT  x4, x7, x2      |    1     |   0    |    0     |    00     |   0    |  0   |   X    |  10   |
+|12 | `005203B3`       | 0110011 | ADD  x7, x4, x5      |    1     |   0    |    0     |    00     |   0    |  0   |   X    |  10   |
+|13 | `402383B3`       | 0110011 | SUB  x7, x7, x2      |    1     |   0    |    0     |    00     |   0    |  0   |   X    |  10   |
+|14 | `0471AA23`       | 0100011 | SW   x7, 84(x3)      |    0     |   1    |    1     |    X      |   0    |  0   |  01    |  00   |
+|15 | `06002103`       | 0000011 | LW   x2, 96(x0)      |    1     |   1    |    0     |    01     |   0    |  0   |  00    |  00   |
+|16 | `005104B3`       | 0110011 | ADD  x9, x2, x5      |    1     |   0    |    0     |    00     |   0    |  0   |   X    |  10   |
+|17 | `008001EF`       | 1101111 | JAL  x3, 494         |    1     |   X    |    0     |    10     |   0    |  1   |  11    |  XX   |
+|18 | `00100113`       | 0010011 | ADDI x2, x0, 1       |    1     |   1    |    0     |    00     |   0    |  0   |  00    |  11   |
+|19 | `00910133`       | 0110011 | ADD  x2, x2, x9      |    1     |   0    |    0     |    00     |   0    |  0   |   X    |  10   |
+|20 | `0221A023`       | 0100011 | SW   x2, 32(x3)      |    0     |   1    |    1     |    X      |   0    |  0   |  01    |  00   |
+|21 | `00210063`       | 1100011 | BEQ  x2, x2, 0       |    0     |   0    |    0     |    X      |   1    |  0   |  10    |  01   |
+
+
+### Wave de mi Main_decoder
+![alt text](image.png)
 

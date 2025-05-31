@@ -1,8 +1,12 @@
 m255
 K4
 z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
 !s12c _opt
-Z0 !s99 nomlopt
+R1
 !s11f vlog 2023.3 2023.07, Jul 17 2023
 13
 !s112 1.1
@@ -10,262 +14,77 @@ Z0 !s99 nomlopt
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 dC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa
+Z2 dC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa
 T_opt
-!s110 1748534576
-VlWz`Y]lbH2PBQ>fgn0[[T2
-04 21 4 work Single_Cycle_RISCV_tb fast 0
-=1-a841f433c775-6838852f-35d-55b8
-R0
-!s12b OEM100
-!s124 OEM10U10 
-o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
-Z2 tCvgOpt 0
+!s110 1748564819
+VHjoN8m?@:_TW^2XZjaUOM2
+Z3 04 15 4 work tb_main_decoder fast 0
+=1-a841f433c775-6838fb52-341-17bc
+R1
+Z4 !s12b OEM100
+Z5 !s124 OEM10U2 
+Z6 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z7 tCvgOpt 0
 n@_opt
-OL;O;2023.3;77
-vALU
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v
-Z3 !s110 1748534574
-!i10b 1
-!s100 Y8d]nFz`[8AD:O[b9g:;@3
-I@=FA>WMi`gYfdLMoJHJ8h1
-R1
-w1748445189
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v
-!i122 4
-L0 1 26
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 OL;L;2023.3;77
-r1
-!s85 0
-31
-Z6 !s108 1748534574.000000
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v|
-!i113 0
-Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z8 !s92 -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 OL;O;2023.3;77
 R2
-n@a@l@u
-valu_decoder
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v
+T_opt1
+!s110 1748628370
+Vhcal8hkk99?VNn>kA5=eC3
 R3
-!i10b 1
-!s100 IW7CRW1?Y>HWG[mM7;kPm2
-IWa7DMlZoINVVYhB2l`0Re0
+=1-a841f433c775-6839f391-239-49bc
 R1
-w1748455879
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v
-!i122 5
-L0 1 31
 R4
 R5
-r1
-!s85 0
-31
 R6
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v|
-!i113 0
 R7
+n@_opt1
 R8
-R2
-vControlUnit
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v
-R3
-!i10b 1
-!s100 b7Bbh4m:FXFN85X;Y;cV^1
-I38WEfj]7LHnF8Nnk[@3z61
-R1
-w1748527755
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v
-!i122 6
-L0 1 46
-R4
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v|
-!i113 0
-R7
-R8
-R2
-n@control@unit
-vdata_memory
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/data_memory.v
-R3
-!i10b 1
-!s100 >[zPofKGzi?33FVdKVHA62
-IWWCol547cINIIYlSG:EQg2
-R1
-w1748533109
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/data_memory.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/data_memory.v
-!i122 3
-L0 1 35
-R4
-R5
-r1
-!s85 0
-31
-Z9 !s108 1748534573.000000
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/data_memory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/data_memory.v|
-!i113 0
-R7
-R8
-R2
-vExtend
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v
-Z10 !s110 1748534573
-!i10b 1
-!s100 RLFS>SD9fO0EG@ZQGK`z]3
-IIY>MEjLWm4bhn57lA<0Fa1
-R1
-w1748454967
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v
-!i122 2
-L0 1 25
-R4
-R5
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v|
-!i113 0
-R7
-R8
-R2
-n@extend
-vInstructionMemory
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v
-R3
-!i10b 1
-!s100 8FfTl=Z?J??j8Ec@5DVf30
-IgLL;RIl:4R69FG5]1I`Oz1
-R1
-w1748458566
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v
-!i122 8
-L0 1 14
-R4
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v|
-!i113 0
-R7
-R8
-R2
-n@instruction@memory
 vmain_decoder
 2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v
-R3
+Z9 !s110 1748628368
 !i10b 1
 !s100 KINk]]N<kj>6MI;dFej;>0
 IoTfFgWU8iXieXK7AncjIl3
-R1
+R2
 w1748454217
 8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v
 FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v
-!i122 7
+!i122 0
 L0 1 116
-R4
-R5
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2023.3;77
 r1
 !s85 0
 31
-R6
+Z12 !s108 1748628368.000000
 !s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v|
 !i113 0
+Z13 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s92 -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R7
-R8
-R2
-vregister_file
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v
-R10
+vtb_main_decoder
+2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v
+R9
 !i10b 1
-!s100 4aY8Pm;QBhhokghPmckg[2
-IR3M8lG2>XJFVBec>Sm?1l2
-R1
-w1748533374
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v
+!s100 Y]hRSXgi3T[6gb]3lCnK:2
+I22a^eY9`SXmeIn<Wj[VXc2
+R2
+w1748564423
+8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v
+FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v
 !i122 1
-L0 3 41
-R4
-R5
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v|
-!i113 0
-R7
-R8
-R2
-vSingle_Cycle_RISCV
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v
+L0 3 88
 R10
-!i10b 1
-!s100 hmSeFRMiTO@JhKhQo1]]F1
-IEo^mh6=h68ScXXbE[82Ag0
-R1
-w1748527679
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v
-!i122 0
-L0 1 122
-R4
-R5
+R11
 r1
 !s85 0
 31
-R9
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v|
+R12
+!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v|
 !i113 0
+R13
+R14
 R7
-R8
-R2
-n@single_@cycle_@r@i@s@c@v
-vSingle_Cycle_RISCV_tb
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v
-!s110 1748534575
-!i10b 1
-!s100 =O2Q>X1FUlOg2HXDSkEbQ3
-IcJ0>Uo@RG38MaY1`nHZ?10
-R1
-w1748534549
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v
-!i122 9
-L0 3 161
-R4
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v|
-!i113 0
-R7
-R8
-R2
-n@single_@cycle_@r@i@s@c@v_tb
