@@ -330,3 +330,4 @@ run -all
 # Break in Module Single_Cycle_RISCV_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v line 71
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Top_Wave.do
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Top_Wave.do
+# Causality operation skipped due to absence of debug database file
