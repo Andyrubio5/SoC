@@ -60,3 +60,19 @@ El main decoder es el encargado de traducir el opcode a una serie de señales de
 ### Wave de mi Main_decoder
 ![alt text](image.png)
 
+## Instrucciones Implementadas En El Top `Single_Cycle_RISCV.v`
+
+El módulo `Single_Cycle_RISCV` representa el diseño completo de un procesador RISC-V de un solo ciclo. Su función principal es **interconectar y controlar todos los módulos internos** para ejecutar instrucciones de forma secuencial. Dentro de este módulo se coordinan las siguientes tareas:
+
+- **Program Counter (PC):** Incrementa o salta a la siguiente dirección de instrucción.
+- **Instruction Fetch:** Lee la instrucción actual desde `InstructionMemory`.
+- **Decodificación:** Extrae los registros fuente y destino, tipo de instrucción y señales de control a través de `ControlUnit`.
+- **Lectura de registros:** Extrae los valores de los registros fuente desde `RegisterFile`.
+- **Generación del inmediato:** Usa `ImmediateGenerator` para obtener el valor inmediato correcto.
+- **ALU:** Realiza la operación aritmética o lógica indicada.
+- **Data Memory:** Lee o escribe datos si la instrucción lo requiere (`LW`, `SW`).
+- **Resultado final:** Decide si el resultado final viene de la ALU o la memoria, y lo escribe en el registro destino si corresponde.
+
+### Wave de mi Top
+![alt text](image-1.png)
+

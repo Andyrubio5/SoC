@@ -27,78 +27,306 @@
 # Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:28:59 on May 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v 
+# -- Compiling module Single_Cycle_RISCV
+# 
+# Top level modules:
+# 	Single_Cycle_RISCV
+# End time: 19:28:59 on May 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:28:59 on May 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/register_file.v 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 19:28:59 on May 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:28:59 on May 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Extend.v 
+# -- Compiling module Extend
+# 
+# Top level modules:
+# 	Extend
+# End time: 19:28:59 on May 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/data_memory.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:28:59 on May 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/data_memory.v 
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 19:29:00 on May 30,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:29:00 on May 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 19:29:00 on May 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:29:00 on May 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/alu_decoder.v 
+# -- Compiling module alu_decoder
+# 
+# Top level modules:
+# 	alu_decoder
+# End time: 19:29:00 on May 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:29:00 on May 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v 
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 19:29:00 on May 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:06:08 on May 30,2025
+# Start time: 19:29:00 on May 30,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/main_decoder.v 
 # -- Compiling module main_decoder
 # 
 # Top level modules:
 # 	main_decoder
-# End time: 12:06:08 on May 30,2025, Elapsed time: 0:00:00
+# End time: 19:29:00 on May 30,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:06:08 on May 30,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v 
-# -- Compiling module tb_main_decoder
+# Start time: 19:29:00 on May 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/InstructionMemory.v 
+# -- Compiling module InstructionMemory
 # 
 # Top level modules:
-# 	tb_main_decoder
-# End time: 12:06:08 on May 30,2025, Elapsed time: 0:00:00
+# 	InstructionMemory
+# End time: 19:29:00 on May 30,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_main_decoder
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_main_decoder 
-# Start time: 12:06:08 on May 30,2025
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 19:29:00 on May 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v 
+# -- Compiling module Single_Cycle_RISCV_tb
+# 
+# Top level modules:
+# 	Single_Cycle_RISCV_tb
+# End time: 19:29:00 on May 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Single_Cycle_RISCV_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Single_Cycle_RISCV_tb 
+# Start time: 19:29:00 on May 30,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.tb_main_decoder(fast)
+# Loading work.Single_Cycle_RISCV_tb(fast)
+# Loading work.Single_Cycle_RISCV(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.register_file(fast)
+# Loading work.Extend(fast)
+# Loading work.ALU(fast)
+# Loading work.data_memory(fast)
+# Loading work.ControlUnit(fast)
 # Loading work.main_decoder(fast)
+# Loading work.alu_decoder(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrc'. The port definition is at: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /Single_Cycle_RISCV_tb/dut/control_unit File: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v Line: 103
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: andyq  Hostname: LAPDEANDY  ProcessID: 6076
-#           Attempting to use alternate WLF file "./wlftntyh75".
+#           Attempting to use alternate WLF file "./wlftkn58i2".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftntyh75
+#           Using alternate file: ./wlftkn58i2
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# | Instruction  | Opcode  | RegWrite | ALUSrc | MemWrite | ResultSrc | Branch | ALUOp |
-# |--------------|---------|----------|--------|----------|-----------|--------|-------|
-# | 0x00500113 | 0010011 |    1     |   1    |    0     |     00      |   0    |  11   |
-# | 0x00c00193 | 0010011 |    1     |   1    |    0     |     00      |   0    |  11   |
-# | 0xff718393 | 0010011 |    1     |   1    |    0     |     00      |   0    |  11   |
-# | 0x0023e233 | 0110011 |    1     |   0    |    0     |     00      |   0    |  10   |
-# | 0x0041f2b3 | 0110011 |    1     |   0    |    0     |     00      |   0    |  10   |
-# | 0x004282b3 | 0110011 |    1     |   0    |    0     |     00      |   0    |  10   |
-# | 0x02728863 | 1100011 |    0     |   0    |    0     |     xx      |   1    |  01   |
-# | 0x0041a233 | 0110011 |    1     |   0    |    0     |     00      |   0    |  10   |
-# | 0x00020463 | 1100011 |    0     |   0    |    0     |     xx      |   1    |  01   |
-# | 0x00000293 | 0010011 |    1     |   1    |    0     |     00      |   0    |  11   |
-# | 0x0023a233 | 0110011 |    1     |   0    |    0     |     00      |   0    |  10   |
-# | 0x005203b3 | 0110011 |    1     |   0    |    0     |     00      |   0    |  10   |
-# | 0x402383b3 | 0110011 |    1     |   0    |    0     |     00      |   0    |  10   |
-# | 0x0471aa23 | 0100011 |    0     |   1    |    1     |     xx      |   0    |  00   |
-# | 0x06002103 | 0000011 |    1     |   1    |    0     |     01      |   0    |  00   |
-# | 0x005104b3 | 0110011 |    1     |   0    |    0     |     00      |   0    |  10   |
-# | 0x008001ef | 1101111 |    1     |   x    |    0     |     10      |   0    |  xx   |
-# | 0x00100113 | 0010011 |    1     |   1    |    0     |     00      |   0    |  11   |
-# | 0x00910133 | 0110011 |    1     |   0    |    0     |     00      |   0    |  10   |
-# | 0x0221a023 | 0100011 |    0     |   1    |    1     |     xx      |   0    |  00   |
-# | 0x00210063 | 1100011 |    0     |   0    |    0     |     xx      |   1    |  01   |
-# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v(88)
-#    Time: 220 ns  Iteration: 0  Instance: /tb_main_decoder
+# === Iniciando simulación del procesador RISC-V Single Cycle ===
+# Tiempo	| PC		| ALU Result	| Reset
+# --------|---------------|---------------|------
+# Monitor - Tiempo: 0, PC: 00000000, ALU: 00000005
+# 20000	| 00000000	| 00000005	| 0
+# Monitor - Tiempo: 25000, PC: 00000004, ALU: 0000000c
+# 26000	| 00000004	| 0000000c	| 0
+# Monitor - Tiempo: 35000, PC: 00000008, ALU: 00000003
+# 36000	| 00000008	| 00000003	| 0
+# Monitor - Tiempo: 45000, PC: 0000000c, ALU: 00000007
+# 46000	| 0000000c	| 00000007	| 0
+# Monitor - Tiempo: 55000, PC: 00000010, ALU: 00000004
+# 56000	| 00000010	| 00000004	| 0
+# Monitor - Tiempo: 65000, PC: 00000014, ALU: 0000000b
+# 66000	| 00000014	| 0000000b	| 0
+# Monitor - Tiempo: 75000, PC: 00000018, ALU: 00000008
+# 76000	| 00000018	| 00000008	| 0
+# Monitor - Tiempo: 85000, PC: 0000001c, ALU: 00000000
+# 86000	| 0000001c	| 00000000	| 0
+# Monitor - Tiempo: 95000, PC: 00000020, ALU: 00000000
+# 96000	| 00000020	| 00000000	| 0
+# Monitor - Tiempo: 105000, PC: 00000028, ALU: 00000001
+# 106000	| 00000028	| 00000001	| 0
+# Monitor - Tiempo: 115000, PC: 0000002c, ALU: 0000000c
+# 116000	| 0000002c	| 0000000c	| 0
+# Monitor - Tiempo: 125000, PC: 00000030, ALU: 00000007
+# 126000	| 00000030	| 00000007	| 0
+# Monitor - Tiempo: 135000, PC: 00000034, ALU: 00000060
+# 136000	| 00000034	| 00000060	| 0
+# Memory Write - Time: 145000 Addr: 00000060 Data: 00000007
+# Monitor - Tiempo: 145000, PC: 00000038, ALU: 00000060
+# 146000	| 00000038	| 00000060	| 0
+# Monitor - Tiempo: 155000, PC: 0000003c, ALU: 00000012
+# 156000	| 0000003c	| 00000012	| 0
+# Monitor - Tiempo: 165000, PC: 00000040, ALU: xxxxxxxx
+# 166000	| 00000040	| xxxxxxxx	| 0
+# Monitor - Tiempo: 175000, PC: 00000048, ALU: 00000019
+# 176000	| 00000048	| 00000019	| 0
+# Monitor - Tiempo: 185000, PC: 0000004c, ALU: xxxxxxxx
+# 186000	| 0000004c	| xxxxxxxx	| 0
+# Memory Write - Time: 195000 Addr: xxxxxxxx Data: 00000019
+# Monitor - Tiempo: 195000, PC: 00000050, ALU: 00000000
+# 196000	| 00000050	| 00000000	| 0
+# 206000	| 00000050	| 00000000	| 0
+# 216000	| 00000050	| 00000000	| 0
+# 
+# === Test de Reset ===
+# Monitor - Tiempo: 216000, PC: 00000000, ALU: 00000005
+# 236000	| 00000000	| 00000005	| 1
+# Monitor - Tiempo: 245000, PC: 00000004, ALU: 0000000c
+# 246000	| 00000004	| 0000000c	| 0
+# Monitor - Tiempo: 255000, PC: 00000008, ALU: 00000003
+# 256000	| 00000008	| 00000003	| 0
+# Monitor - Tiempo: 265000, PC: 0000000c, ALU: 00000007
+# 266000	| 0000000c	| 00000007	| 0
+# Monitor - Tiempo: 275000, PC: 00000010, ALU: 00000004
+# 276000	| 00000010	| 00000004	| 0
+# Monitor - Tiempo: 285000, PC: 00000014, ALU: 0000000b
+# 286000	| 00000014	| 0000000b	| 0
+# Monitor - Tiempo: 295000, PC: 00000018, ALU: 00000008
+# 296000	| 00000018	| 00000008	| 0
+# Monitor - Tiempo: 305000, PC: 0000001c, ALU: 00000000
+# 306000	| 0000001c	| 00000000	| 0
+# Monitor - Tiempo: 315000, PC: 00000020, ALU: 00000000
+# 316000	| 00000020	| 00000000	| 0
+# Monitor - Tiempo: 325000, PC: 00000028, ALU: 00000001
+# 326000	| 00000028	| 00000001	| 0
+# Monitor - Tiempo: 335000, PC: 0000002c, ALU: 0000000c
+# 336000	| 0000002c	| 0000000c	| 0
+# 
+# === Simulación completada ===
+# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v(71)
+#    Time: 336 ns  Iteration: 0  Instance: /Single_Cycle_RISCV_tb
 # 1
-# Break in Module tb_main_decoder at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/tb_main_decoder.v line 88
-add wave -divider "=== MAIN DECODER ==="
-add wave -bin   /tb_main_decoder/uut/instructions
-# ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_main_decoder/uut/instructions'.
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Primer_formato.do
-do C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Primer_formato.do
-do C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Primer_formato.do
+# Break in Module Single_Cycle_RISCV_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v line 71
+do C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Top_Wave.do
+restart
+# Closing VCD file "single_cycle_riscv.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.Single_Cycle_RISCV_tb(fast)
+# Loading work.Single_Cycle_RISCV(fast)
+# Loading work.InstructionMemory(fast)
+# Loading work.register_file(fast)
+# Loading work.Extend(fast)
+# Loading work.ALU(fast)
+# Loading work.data_memory(fast)
+# Loading work.ControlUnit(fast)
+# Loading work.main_decoder(fast)
+# Loading work.alu_decoder(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'ResultSrc'. The port definition is at: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/ControlUnit.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /Single_Cycle_RISCV_tb/dut/control_unit File: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV.v Line: 103
+run -all
+# === Iniciando simulación del procesador RISC-V Single Cycle ===
+# Tiempo	| PC		| ALU Result	| Reset
+# --------|---------------|---------------|------
+# Monitor - Tiempo: 0, PC: 00000000, ALU: 00000005
+# 20000	| 00000000	| 00000005	| 0
+# Monitor - Tiempo: 25000, PC: 00000004, ALU: 0000000c
+# 26000	| 00000004	| 0000000c	| 0
+# Monitor - Tiempo: 35000, PC: 00000008, ALU: 00000003
+# 36000	| 00000008	| 00000003	| 0
+# Monitor - Tiempo: 45000, PC: 0000000c, ALU: 00000007
+# 46000	| 0000000c	| 00000007	| 0
+# Monitor - Tiempo: 55000, PC: 00000010, ALU: 00000004
+# 56000	| 00000010	| 00000004	| 0
+# Monitor - Tiempo: 65000, PC: 00000014, ALU: 0000000b
+# 66000	| 00000014	| 0000000b	| 0
+# Monitor - Tiempo: 75000, PC: 00000018, ALU: 00000008
+# 76000	| 00000018	| 00000008	| 0
+# Monitor - Tiempo: 85000, PC: 0000001c, ALU: 00000000
+# 86000	| 0000001c	| 00000000	| 0
+# Monitor - Tiempo: 95000, PC: 00000020, ALU: 00000000
+# 96000	| 00000020	| 00000000	| 0
+# Monitor - Tiempo: 105000, PC: 00000028, ALU: 00000001
+# 106000	| 00000028	| 00000001	| 0
+# Monitor - Tiempo: 115000, PC: 0000002c, ALU: 0000000c
+# 116000	| 0000002c	| 0000000c	| 0
+# Monitor - Tiempo: 125000, PC: 00000030, ALU: 00000007
+# 126000	| 00000030	| 00000007	| 0
+# Monitor - Tiempo: 135000, PC: 00000034, ALU: 00000060
+# 136000	| 00000034	| 00000060	| 0
+# Memory Write - Time: 145000 Addr: 00000060 Data: 00000007
+# Monitor - Tiempo: 145000, PC: 00000038, ALU: 00000060
+# 146000	| 00000038	| 00000060	| 0
+# Monitor - Tiempo: 155000, PC: 0000003c, ALU: 00000012
+# 156000	| 0000003c	| 00000012	| 0
+# Monitor - Tiempo: 165000, PC: 00000040, ALU: xxxxxxxx
+# 166000	| 00000040	| xxxxxxxx	| 0
+# Monitor - Tiempo: 175000, PC: 00000048, ALU: 00000019
+# 176000	| 00000048	| 00000019	| 0
+# Monitor - Tiempo: 185000, PC: 0000004c, ALU: xxxxxxxx
+# 186000	| 0000004c	| xxxxxxxx	| 0
+# Memory Write - Time: 195000 Addr: xxxxxxxx Data: 00000019
+# Monitor - Tiempo: 195000, PC: 00000050, ALU: 00000000
+# 196000	| 00000050	| 00000000	| 0
+# 206000	| 00000050	| 00000000	| 0
+# 216000	| 00000050	| 00000000	| 0
+# 
+# === Test de Reset ===
+# Monitor - Tiempo: 216000, PC: 00000000, ALU: 00000005
+# 236000	| 00000000	| 00000005	| 1
+# Monitor - Tiempo: 245000, PC: 00000004, ALU: 0000000c
+# 246000	| 00000004	| 0000000c	| 0
+# Monitor - Tiempo: 255000, PC: 00000008, ALU: 00000003
+# 256000	| 00000008	| 00000003	| 0
+# Monitor - Tiempo: 265000, PC: 0000000c, ALU: 00000007
+# 266000	| 0000000c	| 00000007	| 0
+# Monitor - Tiempo: 275000, PC: 00000010, ALU: 00000004
+# 276000	| 00000010	| 00000004	| 0
+# Monitor - Tiempo: 285000, PC: 00000014, ALU: 0000000b
+# 286000	| 00000014	| 0000000b	| 0
+# Monitor - Tiempo: 295000, PC: 00000018, ALU: 00000008
+# 296000	| 00000018	| 00000008	| 0
+# Monitor - Tiempo: 305000, PC: 0000001c, ALU: 00000000
+# 306000	| 0000001c	| 00000000	| 0
+# Monitor - Tiempo: 315000, PC: 00000020, ALU: 00000000
+# 316000	| 00000020	| 00000000	| 0
+# Monitor - Tiempo: 325000, PC: 00000028, ALU: 00000001
+# 326000	| 00000028	| 00000001	| 0
+# Monitor - Tiempo: 335000, PC: 0000002c, ALU: 0000000c
+# 336000	| 0000002c	| 0000000c	| 0
+# 
+# === Simulación completada ===
+# ** Note: $finish    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v(71)
+#    Time: 336 ns  Iteration: 0  Instance: /Single_Cycle_RISCV_tb
+# 1
+# Break in Module Single_Cycle_RISCV_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/Single_Cycle_RISCV_tb.v line 71
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Top_Wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Top_Wave.do
