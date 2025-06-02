@@ -76,3 +76,5 @@ El módulo `Single_Cycle_RISCV` representa el diseño completo de un procesador 
 ### Wave de mi Top
 ![alt text](image-1.png)
 
+En el wave se puede observar que esta dividido, en instruction_pc, tenemos el numero de la instruccion del archivo .hex, el oc counter (que suma de 4 en 4) y el opcode para saber que tipo de instruccion es.
+Continuando en Señales de Control tenemos tenemos las señales que son bits generados por la Unidad de Control que activan o desactivan ciertas partes del procesador según la instrucción actual. Estan los inmediatos, el de source y el de extend, utilizado para ciertas instrucciones que utilizan los inmediatos. Los registros yo utilice lo que entran en el register file, ya que son los registros de la instruccion utilizados. Se encuentra tambien la ALU, donde aparece el resultado, y el alu control (utilizado para saber que tipo de operacion se hara), y por ultimo la memoria de datos del procesador, encargado de guardar y devolver datos en tiempo de ejecucion. 

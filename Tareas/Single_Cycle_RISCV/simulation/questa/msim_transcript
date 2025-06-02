@@ -331,3 +331,9 @@ run -all
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Top_Wave.do
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Top_Wave.do
 # Causality operation skipped due to absence of debug database file
+add wave -position insertpoint  \
+sim:/Single_Cycle_RISCV_tb/dut/rf/A1 \
+sim:/Single_Cycle_RISCV_tb/dut/rf/A2
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Top_Wave.do
+add wave -position insertpoint  \
+sim:/Single_Cycle_RISCV_tb/dut/rf/A3
