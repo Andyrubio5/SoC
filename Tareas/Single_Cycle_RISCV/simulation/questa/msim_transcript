@@ -337,3 +337,5 @@ sim:/Single_Cycle_RISCV_tb/dut/rf/A2
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/Single_Cycle_RISCV/simulation/questa/Top_Wave.do
 add wave -position insertpoint  \
 sim:/Single_Cycle_RISCV_tb/dut/rf/A3
+# End time: 07:19:35 on Jun 02,2025, Elapsed time: 59:50:35
+# Errors: 0, Warnings: 2
