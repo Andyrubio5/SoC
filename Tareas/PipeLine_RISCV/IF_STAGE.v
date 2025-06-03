@@ -12,9 +12,9 @@ assign pc_next = PC + 32'd4;
 
 
 // Instancia de Program Counter
-ProgramCounter pc_inst (
+program_counter pc_inst (
     .clk(clk),
-    .rst(rst),
+    .reset(rst),
     .pc_next(pc_next),
     .pc(PC)
 );
