@@ -75,3 +75,5 @@
 # ** Note: $stop    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE_tb.v(66)
 #    Time: 40 ps  Iteration: 0  Instance: /EX_STAGE_tb
 # Break in Module EX_STAGE_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE_tb.v line 66
+# End time: 11:47:52 on Jun 10,2025, Elapsed time: 0:05:41
+# Errors: 0, Warnings: 1

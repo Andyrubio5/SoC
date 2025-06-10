@@ -1,59 +1,69 @@
-# EX_STAGE – Execute Stage (RISC-V Pipeline)
+
+# EX_STAGE – Execute Stage with Forwarding (RISC-V Pipeline)
 
 ## Overview
 
-The Execute (EX) stage is the third step in the 5-stage RISC-V pipeline. Its main function is to perform arithmetic and logic operations using the ALU. This includes operations such as addition, subtraction, comparisons, and address calculations for memory instructions.
+The Execute (EX) stage is responsible for performing arithmetic, logic, or address calculations in a pipelined processor. In a real pipeline, data hazards can occur when instructions depend on values that are not yet written back. To solve this, the EX_STAGE integrates **forwarding logic** to select the correct operand sources dynamically.
 
+---
 
 ## Core Responsibilities
 
-The EX stage receives decoded information from the ID stage and produces key results used in later stages. It performs:
+1. **Operand Selection (with Forwarding)**
+   - Chooses operand A (`SrcA`) for the ALU based on `ForwardA`:
+     - From register file, MEM stage, or WB stage
+   - Chooses operand B (`SrcB`) based on:
+     - `ForwardB` and `ALUSrc` (select between `rs2` or `imm_ext`)
 
-1. **ALU Operation**
-   - Takes in two operands: one from register `rs1`, and one that is either `rs2` or an immediate value, depending on the `ALUSrc` signal.
-   - Performs operations determined by the `ALUControl` signal (e.g., add, sub, and, or, slt).
-   - Outputs the result as `ALUResult`.
+2. **ALU Operation**
+   - Performs the required arithmetic/logic operation
+   - Outputs result (`ALUResult`) and sets the `Zero` flag for branches
 
-2. **Zero Flag Generation**
-   - Outputs a `Zero` signal that is high if the result of the ALU is zero.
-   - This flag is typically used in conditional branches (e.g., beq, bne).
-
-3. **Data Forwarding**
-   - Passes `rs2_data` directly to the next stage for store instructions (`sw`).
-   - Passes `rd` and optionally `PC` and `instruction` to maintain continuity in the pipeline.
+3. **rs2 Forwarding**
+   - `rs2_final` output handles correct value for store operations (e.g., `sw`)
 
 ---
 
 ## Inputs
 
-- `rs1_data`: Value from register `rs1`.
-- `rs2_data`: Value from register `rs2`.
-- `imm_ext`: Immediate value sign-extended from ID.
-- `ALUSrc`: Control signal to select between `rs2_data` and `imm_ext` as ALU operand B.
-- `ALUControl`: 3-bit code that determines the ALU operation.
-- `rd_in`: Destination register address to be forwarded.
-- `PC_in`: Optional, forwarded for jump or debugging.
-- `instruction`: Optional, for debugging or hazard detection.
+- `rs1_data`, `rs2_data`: Original operands from the register file
+- `imm_ext`: Immediate value extended from instruction
+- `ALUControl`: Operation to perform
+- `ALUSrc`: Selects between immediate and forwarded `rs2`
+- `ForwardA`, `ForwardB`: Control signals from the Forwarding Unit
+- `ALUResult_MEM`, `WriteData_WB`: Forwarded data sources
+- `PC`, `rs1`, `rs2`: Optional passthrough inputs
 
 ---
 
 ## Outputs
 
-- `ALUResult`: Result of the ALU operation.
-- `Zero`: High if `ALUResult` is zero.
-- `rs2_data_out`: Forwarded to the MEM stage (used by store instructions).
-- `rd_out`: Forwarded to the WB stage.
-- `PC_out`: Optional PC passthrough.
-- `instruction_out`: Optional passthrough for identification or debugging.
+- `ALUResult`: Output of the ALU
+- `Zero`: Indicates if the ALU result is zero
+- `rs2_final`: Correct value to pass to MEM stage for stores
 
 ---
 
-## Testbench Notes
+## Forwarding MUX Logic
 
-The testbench validates core operations using:
-- Register-to-register addition (R-type)
-- Register + immediate addition (I-type)
-- Address calculation for store (S-type)
+| ForwardA/B | Source           |
+|------------|------------------|
+| `00`       | Register file     |
+| `01`       | ALUResult from MEM stage |
+| `10`       | WriteData from WB stage  |
+
+---
+
+## Example Testbench Scenarios
+
+| Case | ForwardA | ForwardB | ALUSrc | Expected ALUResult |
+|------|----------|----------|--------|---------------------|
+| 1    | 00       | 00       | 0      | rs1 + rs2           |
+| 2    | 01       | 00       | 0      | ALUResult_MEM + rs2 |
+| 3    | 00       | 10       | 0      | rs1 + WriteData_WB  |
+| 4    | 00       | xx       | 1      | rs1 + imm_ext       |
+
+---
 
 ## Wave View
-![alt text](image-3.png)
+![alt text](image-8.png)
