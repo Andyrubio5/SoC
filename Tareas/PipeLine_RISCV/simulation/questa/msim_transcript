@@ -24,47 +24,47 @@
 # Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/MEM_STAGE.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 10:14:43 on Jun 10,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE.v 
-# -- Compiling module EX_STAGE
+# Start time: 10:22:20 on Jun 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/MEM_STAGE.v 
+# -- Compiling module MEM_STAGE
 # 
 # Top level modules:
-# 	EX_STAGE
-# End time: 10:14:43 on Jun 10,2025, Elapsed time: 0:00:00
+# 	MEM_STAGE
+# End time: 10:22:20 on Jun 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ALU.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/data_memory.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 10:14:43 on Jun 10,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ALU.v 
-# -- Compiling module ALU
+# Start time: 10:22:20 on Jun 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/data_memory.v 
+# -- Compiling module data_memory
 # 
 # Top level modules:
-# 	ALU
-# End time: 10:14:44 on Jun 10,2025, Elapsed time: 0:00:01
+# 	data_memory
+# End time: 10:22:20 on Jun 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/MEM_STAGE_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 10:14:44 on Jun 10,2025
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE_tb.v 
-# -- Compiling module EX_STAGE_tb
+# Start time: 10:22:20 on Jun 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/MEM_STAGE_tb.v 
+# -- Compiling module MEM_STAGE_tb
 # 
 # Top level modules:
-# 	EX_STAGE_tb
-# End time: 10:14:44 on Jun 10,2025, Elapsed time: 0:00:00
+# 	MEM_STAGE_tb
+# End time: 10:22:20 on Jun 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  EX_STAGE_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" EX_STAGE_tb 
-# Start time: 10:14:44 on Jun 10,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  MEM_STAGE_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" MEM_STAGE_tb 
+# Start time: 10:22:20 on Jun 10,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.EX_STAGE_tb(fast)
-# Loading work.EX_STAGE(fast)
-# Loading work.ALU(fast)
+# Loading work.MEM_STAGE_tb(fast)
+# Loading work.MEM_STAGE(fast)
+# Loading work.data_memory(fast)
 # 
 # add wave *
 # view structure
@@ -72,8 +72,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Starting EX_STAGE test...
-# ** Note: $stop    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE_tb.v(82)
-#    Time: 40 ps  Iteration: 0  Instance: /EX_STAGE_tb
-# Break in Module EX_STAGE_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE_tb.v line 82
-# Causality operation skipped due to absence of debug database file
+# Inicio del test de MEM_STAGE...
+# Memory Write - Time: 5 Addr: 00000014 Data: abcd1234
+# ** Note: $stop    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/MEM_STAGE_tb.v(46)
+#    Time: 20 ps  Iteration: 0  Instance: /MEM_STAGE_tb
+# Break in Module MEM_STAGE_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/MEM_STAGE_tb.v line 46
+# End time: 10:25:39 on Jun 10,2025, Elapsed time: 0:03:19
+# Errors: 0, Warnings: 1
