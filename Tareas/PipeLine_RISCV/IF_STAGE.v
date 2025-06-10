@@ -13,17 +13,17 @@ assign pc_next = PC + 32'd4;
 
 // Instancia de Program Counter
 program_counter pc_inst (
-    .clk(clk),
+        .clk(clk),
     .reset(rst),
-    .pc_next(pc_next),
-    .pc(PC)
-);
+        .pc_next(pc_next),
+        .pc(PC)
+    );
 
 
 // Instancia de Instruction Memory
 InstructionMemory ins_memory (
     .Address(PC),
-    .ReadData(instruction)
+    .ReadData(instruction)  
 );
 
 endmodule 

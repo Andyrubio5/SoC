@@ -12,112 +12,185 @@ Z0 !s99 nomlopt
 cModel Technology
 Z1 dC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/simulation/questa
 T_opt
-!s110 1748966291
-V:;cd4;Sc:^ES1>8jI3L5b1
-04 11 4 work IF_STAGE_tb fast 0
-=1-a841f433c775-683f1b93-16c-3214
+!s110 1749568942
+Vd8j4WbhPfYY37;DiNl7HQ3
+04 11 4 work ID_STAGE_tb fast 0
+=1-a841f433c775-68484dae-1c2-16d0
 R0
 !s12b OEM100
-!s124 OEM10U4 
+!s124 OEM10U7 
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
 Z2 tCvgOpt 0
 n@_opt
 OL;O;2023.3;77
-vIF_STAGE
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE.v
-Z3 !s110 1748966290
+valu_decoder
+2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/alu_decoder.v
+Z3 !s110 1749568941
 !i10b 1
-!s100 ^n2YjSDR:aL_Dk^4:LPoS3
-IFbGhcGnCgIWiB>OFem0NL0
+!s100 IW7CRW1?Y>HWG[mM7;kPm2
+IS[hcGKOP`dVVlP[Pn6DDY3
 R1
-w1748966093
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE.v
-!i122 0
-L0 1 29
+w1748455879
+8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/alu_decoder.v
+FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/alu_decoder.v
+!i122 3
+L0 1 31
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z6 !s108 1748966290.000000
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE.v|
+Z6 !s108 1749568941.000000
+!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/alu_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/alu_decoder.v|
 !i113 0
 Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z8 !s92 -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
-n@i@f_@s@t@a@g@e
-vIF_STAGE_tb
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE_tb.v
+vControlUnit
+2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ControlUnit.v
 R3
 !i10b 1
-!s100 ;JTeg9G8Ck;A:L3GfXkom3
-Id=L6cC^ZT32U8X@ATaNCC0
+!s100 G9KDi?YPSRf7b4dQIdW@:2
+IG4JZb5zQXJonn7DAT:2_`1
 R1
-w1748966273
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE_tb.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE_tb.v
-!i122 3
-L0 3 39
+w1748654888
+8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ControlUnit.v
+FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ControlUnit.v
+!i122 4
+L0 1 46
 R4
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE_tb.v|
+!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ControlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ControlUnit.v|
 !i113 0
 R7
 R8
 R2
-n@i@f_@s@t@a@g@e_tb
-vInstructionMemory
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/InstructionMemory.v
+n@control@unit
+vExtend
+2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/Extend.v
 R3
 !i10b 1
-!s100 8FfTl=Z?J??j8Ec@5DVf30
-InEUK_P2mC1KQ7Pg181]2J1
+!s100 RLFS>SD9fO0EG@ZQGK`z]3
+I:h8_4_HEBQfNaAHYDb8AJ2
 R1
-w1748458566
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/InstructionMemory.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/InstructionMemory.v
+w1748454967
+8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/Extend.v
+FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/Extend.v
 !i122 2
-L0 1 14
+L0 1 25
 R4
 R5
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/InstructionMemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/InstructionMemory.v|
+Z9 !s108 1749568940.000000
+!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/Extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/Extend.v|
 !i113 0
 R7
 R8
 R2
-n@instruction@memory
-vprogram_counter
-2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/program_counter.v
+n@extend
+vID_STAGE
+2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE.v
+Z10 !s110 1749568940
+!i10b 1
+!s100 YzEM9JX<_UV?o?GJ:[oGk2
+IHm;1;Tk]P]_Db[B<`Q=aC2
+R1
+w1749567408
+8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE.v
+FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE.v
+!i122 0
+Z11 L0 1 66
+R4
+R5
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE.v|
+!i113 0
+R7
+R8
+R2
+n@i@d_@s@t@a@g@e
+vID_STAGE_tb
+2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE_tb.v
 R3
 !i10b 1
-!s100 MFWFk?c?RQI?P3RMnDk;X2
-IZ5nTaKMooY0HHeYlk@CFc3
+!s100 ^ZFB9OEdW8HEM=9l?K^;53
+I6Cb`QD8Q`BHJ9S1CiX9e40
 R1
-w1748533318
-8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/program_counter.v
-FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/program_counter.v
-!i122 1
-L0 1 13
+w1749568931
+8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE_tb.v
+FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE_tb.v
+!i122 6
+R11
 R4
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/program_counter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/program_counter.v|
+!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE_tb.v|
+!i113 0
+R7
+R8
+R2
+n@i@d_@s@t@a@g@e_tb
+vmain_decoder
+2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/main_decoder.v
+R3
+!i10b 1
+!s100 KINk]]N<kj>6MI;dFej;>0
+IJb8gzD2ZGcejj>QoWXz<?3
+R1
+w1748654633
+8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/main_decoder.v
+FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/main_decoder.v
+!i122 5
+L0 1 116
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/main_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/main_decoder.v|
+!i113 0
+R7
+R8
+R2
+vregister_file
+2C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/register_file.v
+R10
+!i10b 1
+!s100 4aY8Pm;QBhhokghPmckg[2
+IE>mA`7WdhY_hYK`4nji>R0
+R1
+w1748533374
+8C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/register_file.v
+FC:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/register_file.v
+!i122 1
+L0 3 41
+R4
+R5
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/register_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV|C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/register_file.v|
 !i113 0
 R7
 R8
