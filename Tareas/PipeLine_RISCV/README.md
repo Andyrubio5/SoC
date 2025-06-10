@@ -74,19 +74,14 @@ Documentation for the 5-stage pipelined RISC-V processor. This section provides 
 - [Pipeline Overview](pipeline-architecture.md)
 
 ### 🟊 Pipeline Stages
-- [Instruction Fetch (IF)](stages/instruction-fetch.md)
-- [Instruction Decode (ID)](stages/instruction-decode.md)
-- [Execute (EX)](stages/execute.md)
-- [Memory Access (MEM)](stages/memory-access.md)
-- [Write Back (WB)](stages/write-back.md)
+- [Instruction Fetch (IF)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\IF_Stage.md)
+- [Instruction Decode (ID)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\ID_Stage.md)
+- [Execute (EX)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\EX_Stage.md)
+- [Memory Access (MEM)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\MEM_Stage.md)
+- [Write Back (WB)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\WB_Stage.md)
 
 ### 🟊 Hazard Handling
 - [Data Hazards](hazards/data-hazards.md)
 - [Control Hazards](hazards/control-hazards.md)
 - [Forwarding](hazards/forwarding.md)
-
-### 🟊 Visual Resources
-- [Pipeline Diagram](images/pipeline-diagram.png)
-- [Datapath Diagram](images/datapath.png)
-- [Control Signals](images/control-signals.png)
 
