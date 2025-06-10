@@ -1,37 +1,47 @@
 module EX_STAGE (
-    input [31:0] rs1_data,       // Primer operando de la ALU
-    input [31:0] rs2_data,       // Segundo operando si ALUSrc = 0
-    input [31:0] imm_ext,        // Segundo operando si ALUSrc = 1
-    input [2:0] ALUControl,      // Señal de operación ALU
-    input ALUSrc,                // Selección de operando B
-    input [4:0] rd_in,           // Registro destino (passthrough)
-    input [31:0] PC_in,          // Passthrough opcional
-    input [31:0] instruction,    // Passthrough opcional
+    input [31:0] PC,
+    input [31:0] rs1_data,
+    input [31:0] rs2_data,
+    input [31:0] imm_ext,
+    input [4:0] rs1,
+    input [4:0] rs2,
 
-    output [31:0] ALUResult,     // Resultado de la ALU
-    output Zero,                 // Bandera para branch
-    output [31:0] rs2_data_out,  // Passthrough para etapa MEM
-    output [4:0] rd_out,         // Passthrough hacia WB
-    output [31:0] PC_out,        // Passthrough si se usa
-    output [31:0] instruction_out
+    input ALUSrc,
+    input [2:0] ALUControl,
+    input [1:0] ForwardA,
+    input [1:0] ForwardB,
+    input [31:0] ALUResult_MEM,
+    input [31:0] WriteData_WB,
+
+    output Zero,
+    output [31:0] ALUResult,
+    output [31:0] rs2_final
 );
 
-    wire [31:0] SrcB;
+    wire [31:0] SrcA, SrcB, ALU_in_B;
 
-    assign SrcB = (ALUSrc) ? imm_ext : rs2_data;
+    // ===== Multiplexor SrcA =====
+    assign SrcA = (ForwardA == 2'b00) ? rs1_data :
+                  (ForwardA == 2'b01) ? ALUResult_MEM :
+                  (ForwardA == 2'b10) ? WriteData_WB :
+                  32'b0;
 
-    ALU alu_unit (
-        .SrcA(rs1_data),
+    // ===== Multiplexor rs2 =====
+    assign rs2_final = (ForwardB == 2'b00) ? rs2_data :
+                       (ForwardB == 2'b01) ? ALUResult_MEM :
+                       (ForwardB == 2'b10) ? WriteData_WB :
+                       32'b0;
+
+    // ===== ALU second operand =====
+    assign SrcB = ALUSrc ? imm_ext : rs2_final;
+
+    // ===== ALU Module =====
+    ALU alu (
+        .SrcA(SrcA),
         .SrcB(SrcB),
         .ALUControl(ALUControl),
         .Zero(Zero),
         .ALUResult(ALUResult)
     );
-
-    // Passthroughs
-    assign rs2_data_out = rs2_data;
-    assign rd_out = rd_in;
-    assign PC_out = PC_in;
-    assign instruction_out = instruction;
 
 endmodule
