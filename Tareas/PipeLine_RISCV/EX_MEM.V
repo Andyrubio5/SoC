@@ -9,7 +9,9 @@ module EX_MEM (
     input MemWrite_in,
     input RegWrite_in,
     input [1:0] ResultSrc_in,
+    input [31:0] instruction_in,
 
+    output reg [31:0] instruction_out,
     output reg [31:0] ALUResult_out,
     output reg [31:0] rs2_data_out,
     output reg [4:0] rd_out,
@@ -21,6 +23,7 @@ module EX_MEM (
 
     always @(posedge clk or posedge reset) begin
         if (reset) begin
+            instruction_out <= 0;
             ALUResult_out <= 0;
             rs2_data_out <= 0;
             rd_out <= 0;
@@ -29,6 +32,7 @@ module EX_MEM (
             RegWrite_out <= 0;
             ResultSrc_out <= 0;
         end else begin
+            instruction_out <= instruction_in;
             ALUResult_out <= ALUResult_in;
             rs2_data_out <= rs2_data_in;
             rd_out <= rd_in;

@@ -7,9 +7,13 @@ module RISC_V_Pipeline_Processor (
 // Señales entre etapas
 // =====================
 
-// IF → IF_ID
+// Instructions
 wire [31:0] PC_IF, instruction_IF;
 wire [31:0] PC_ID, instruction_ID;
+wire [31:0] instruction_ID_EX;
+wire [31:0] instruction_EX_MEM;
+wire [31:0] instruction_MEM_WB;
+
 
 // ID → ID_EX
 wire [31:0] rs1_data_ID, rs2_data_ID, imm_ext_ID;
@@ -53,8 +57,6 @@ wire [31:0] WriteData_WB;
 // =====================
 // FETCH STAGE
 // =====================
-wire PCSrc;
-wire [31:0] imm_ext_ID; // usada si PCSrc = 1
 
 IF_STAGE fetch (
     .clk(clk),
@@ -130,7 +132,10 @@ ID_EX id_ex_reg (
     .ALUSrc_out(ALUSrc_EX),
     .RegWrite_out(RegWrite_EX),
     .MemWrite_out(MemWrite_EX),
-    .ResultSrc_out(ResultSrc_EX)
+    .ResultSrc_out(ResultSrc_EX),
+    .instruction_in(instruction_ID),
+    .instruction_out(instruction_ID_EX)
+
 );
 
 // =====================
@@ -185,7 +190,10 @@ EX_MEM ex_mem_reg (
     .rd_out(rd_MEM),
     .MemWrite_out(MemWrite_MEM),
     .RegWrite_out(RegWrite_MEM),
-    .ResultSrc_out(ResultSrc_MEM)
+    .ResultSrc_out(ResultSrc_MEM),
+    .instruction_in(instruction_ID_EX),
+    .instruction_out(instruction_EX_MEM)
+
 );
 
 // =====================
@@ -216,7 +224,10 @@ MEM_WB mem_wb_reg (
     .PC_plus4_out(PC_plus4_WB),
     .rd_out(rd_WB),
     .RegWrite_out(RegWrite_WB),
-    .ResultSrc_out(ResultSrc_WB)
+    .ResultSrc_out(ResultSrc_WB),
+    .instruction_in(instruction_EX_MEM),
+    .instruction_out(instruction_MEM_WB)
+
 );
 
 // =====================
@@ -227,7 +238,7 @@ WB_STAGE write_back (
     .ALUResult(ALUResult_WB),
     .ReadData(ReadData_MEM), // se puede usar también ReadData_WB
     .PC_plus4(PC_plus4_WB),
-    .Result(WriteData_WB)
+    .WriteData(WriteData_WB)
 );
 
 

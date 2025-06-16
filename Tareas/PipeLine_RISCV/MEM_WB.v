@@ -8,7 +8,9 @@ module MEM_WB (
     input [4:0] rd_in,
     input RegWrite_in,
     input [1:0] ResultSrc_in,
+    input [31:0] instruction_in,
 
+    output reg [31:0] instruction_out,
     output reg [31:0] ReadData_out,
     output reg [31:0] ALUResult_out,
     output reg [31:0] PC_plus4_out,
@@ -19,6 +21,7 @@ module MEM_WB (
 
     always @(posedge clk or posedge reset) begin
         if (reset) begin
+            instruction_out <= 0;
             ReadData_out <= 0;
             ALUResult_out <= 0;
             PC_plus4_out <= 0;
@@ -26,6 +29,7 @@ module MEM_WB (
             RegWrite_out <= 0;
             ResultSrc_out <= 0;
         end else begin
+            instruction_out <= instruction_in;
             ReadData_out <= ReadData_in;
             ALUResult_out <= ALUResult_in;
             PC_plus4_out <= PC_plus4_in;

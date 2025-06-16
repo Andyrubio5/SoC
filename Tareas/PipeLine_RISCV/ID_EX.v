@@ -15,7 +15,9 @@ module ID_EX (
     input RegWrite_in,
     input MemWrite_in,
     input [1:0] ResultSrc_in,
+    input [31:0] instruction_in,
 
+    output reg [31:0] instruction_out,
     output reg [31:0] PC_out,
     output reg [31:0] rs1_data_out,
     output reg [31:0] rs2_data_out,
@@ -33,6 +35,7 @@ module ID_EX (
 
     always @(posedge clk or posedge reset) begin
         if (reset) begin
+            instruction_out <= 0;
             PC_out <= 0;
             rs1_data_out <= 0;
             rs2_data_out <= 0;
@@ -47,6 +50,7 @@ module ID_EX (
             MemWrite_out <= 0;
             ResultSrc_out <= 0;
         end else begin
+            instruction_out <= instruction_in;
             PC_out <= PC_in;
             rs1_data_out <= rs1_data_in;
             rs2_data_out <= rs2_data_in;
