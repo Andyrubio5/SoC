@@ -26,189 +26,189 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/RISC_V_Pipeline_Processor.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:50:59 on Jun 10,2025
+# Start time: 21:36:41 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/RISC_V_Pipeline_Processor.v 
 # -- Compiling module RISC_V_Pipeline_Processor
 # 
 # Top level modules:
 # 	RISC_V_Pipeline_Processor
-# End time: 12:50:59 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:41 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/Forwarding_Unit.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:50:59 on Jun 10,2025
+# Start time: 21:36:41 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/Forwarding_Unit.v 
 # -- Compiling module Forwarding_Unit
 # 
 # Top level modules:
 # 	Forwarding_Unit
-# End time: 12:51:00 on Jun 10,2025, Elapsed time: 0:00:01
+# End time: 21:36:41 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/MEM_WB.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:00 on Jun 10,2025
+# Start time: 21:36:41 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/MEM_WB.v 
 # -- Compiling module MEM_WB
 # 
 # Top level modules:
 # 	MEM_WB
-# End time: 12:51:00 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:41 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_MEM.V}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:00 on Jun 10,2025
+# Start time: 21:36:42 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_MEM.V 
 # -- Compiling module EX_MEM
 # 
 # Top level modules:
 # 	EX_MEM
-# End time: 12:51:00 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:42 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_EX.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:00 on Jun 10,2025
+# Start time: 21:36:42 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_EX.v 
 # -- Compiling module ID_EX
 # 
 # Top level modules:
 # 	ID_EX
-# End time: 12:51:00 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:42 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_ID.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:00 on Jun 10,2025
+# Start time: 21:36:42 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_ID.v 
 # -- Compiling module IF_ID
 # 
 # Top level modules:
 # 	IF_ID
-# End time: 12:51:00 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:42 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/WB_STAGE.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:00 on Jun 10,2025
+# Start time: 21:36:43 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/WB_STAGE.v 
 # -- Compiling module WB_STAGE
 # 
 # Top level modules:
 # 	WB_STAGE
-# End time: 12:51:00 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:43 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:01 on Jun 10,2025
+# Start time: 21:36:43 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/EX_STAGE.v 
 # -- Compiling module EX_STAGE
 # 
 # Top level modules:
 # 	EX_STAGE
-# End time: 12:51:02 on Jun 10,2025, Elapsed time: 0:00:01
+# End time: 21:36:43 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:02 on Jun 10,2025
+# Start time: 21:36:43 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ID_STAGE.v 
 # -- Compiling module ID_STAGE
 # 
 # Top level modules:
 # 	ID_STAGE
-# End time: 12:51:02 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:43 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/register_file.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:02 on Jun 10,2025
+# Start time: 21:36:44 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/register_file.v 
 # -- Compiling module register_file
 # 
 # Top level modules:
 # 	register_file
-# End time: 12:51:02 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:44 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/Extend.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:02 on Jun 10,2025
+# Start time: 21:36:44 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/Extend.v 
 # -- Compiling module Extend
 # 
 # Top level modules:
 # 	Extend
-# End time: 12:51:02 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:44 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/data_memory.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:02 on Jun 10,2025
+# Start time: 21:36:44 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/data_memory.v 
 # -- Compiling module data_memory
 # 
 # Top level modules:
 # 	data_memory
-# End time: 12:51:02 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:44 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ALU.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:02 on Jun 10,2025
+# Start time: 21:36:44 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 12:51:03 on Jun 10,2025, Elapsed time: 0:00:01
+# End time: 21:36:45 on Jun 15,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/alu_decoder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:03 on Jun 10,2025
+# Start time: 21:36:45 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/alu_decoder.v 
 # -- Compiling module alu_decoder
 # 
 # Top level modules:
 # 	alu_decoder
-# End time: 12:51:03 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:45 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ControlUnit.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:03 on Jun 10,2025
+# Start time: 21:36:45 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/ControlUnit.v 
 # -- Compiling module ControlUnit
 # 
 # Top level modules:
 # 	ControlUnit
-# End time: 12:51:03 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:45 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/main_decoder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:03 on Jun 10,2025
+# Start time: 21:36:45 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/main_decoder.v 
 # -- Compiling module main_decoder
 # 
 # Top level modules:
 # 	main_decoder
-# End time: 12:51:03 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:46 on Jun 15,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:03 on Jun 10,2025
+# Start time: 21:36:46 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/IF_STAGE.v 
 # -- Compiling module IF_STAGE
 # 
 # Top level modules:
 # 	IF_STAGE
-# End time: 12:51:03 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:46 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV {C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/RISC_V_Pipeline_Processor_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 12:51:03 on Jun 10,2025
+# Start time: 21:36:46 on Jun 15,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV" C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/RISC_V_Pipeline_Processor_tb.v 
 # -- Compiling module RISC_V_Pipeline_tb
 # 
 # Top level modules:
 # 	RISC_V_Pipeline_tb
-# End time: 12:51:03 on Jun 10,2025, Elapsed time: 0:00:00
+# End time: 21:36:46 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  RISC_V_Pipeline_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" RISC_V_Pipeline_tb 
-# Start time: 12:51:03 on Jun 10,2025
+# Start time: 21:36:46 on Jun 15,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Warning: C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/RISC_V_Pipeline_Processor.v(236): (vopt-2685) [TFMPC] - Too few port connections for 'write_back'.  Expected 9, found 5.
@@ -237,6 +237,80 @@
 # Loading work.WB_STAGE(fast)
 # 
 # add wave *
+do C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/simulation/questa/pipeline.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -divider Global
+# add wave -noupdate -radix hexadecimal /RISC_V_Pipeline_tb/clk
+# add wave -noupdate -radix hexadecimal /RISC_V_Pipeline_tb/reset
+# add wave -noupdate -divider IF_STAGE
+# add wave -noupdate -label PC_IF -radix hexadecimal /RISC_V_Pipeline_tb/uut/PC_IF
+# add wave -noupdate -label instruction_IF -radix hexadecimal /RISC_V_Pipeline_tb/uut/instruction_IF
+# add wave -noupdate -label PCSrc -radix hexadecimal /RISC_V_Pipeline_tb/uut/PCSrc
+# add wave -noupdate -divider {IF_ID Register}
+# add wave -noupdate -label PC_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/PC_ID
+# add wave -noupdate -label instruction_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/instruction_ID
+# add wave -noupdate -divider ID_STAGE
+# add wave -noupdate -label instruction_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/instruction_ID
+# add wave -noupdate -label rs1_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/rs1_ID
+# add wave -noupdate -label rs2_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/rs2_ID
+# add wave -noupdate -label rd_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/rd_ID
+# add wave -noupdate -label rs1_data_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/rs1_data_ID
+# add wave -noupdate -label rs2_data_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/rs2_data_ID
+# add wave -noupdate -label imm_ext_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/imm_ext_ID
+# add wave -noupdate -label ALUControl_ID -radix hexadecimal /RISC_V_Pipeline_tb/uut/ALUControl_ID
+# add wave -noupdate -divider {ID_EX Register}
+# add wave -noupdate -label instruction_ID_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/instruction_ID_EX
+# add wave -noupdate -label rs1_data_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/rs1_data_EX
+# add wave -noupdate -label rs2_data_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/rs2_data_EX
+# add wave -noupdate -label imm_ext_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/imm_ext_EX
+# add wave -noupdate -label rd_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/rd_EX
+# add wave -noupdate -label ALUSrc_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/ALUSrc_EX
+# add wave -noupdate -label ALUControl_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/ALUControl_EX
+# add wave -noupdate -divider EX_STAGE
+# add wave -noupdate -label instruction_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/instruction_ID_EX
+# add wave -noupdate -label ForwardA -radix hexadecimal /RISC_V_Pipeline_tb/uut/ForwardA
+# add wave -noupdate -label ForwardB -radix hexadecimal /RISC_V_Pipeline_tb/uut/ForwardB
+# add wave -noupdate -label ALUResult_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/ALUResult_EX
+# add wave -noupdate -label Zero_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/Zero_EX
+# add wave -noupdate -label rs2_final_EX -radix hexadecimal /RISC_V_Pipeline_tb/uut/rs2_final_EX
+# add wave -noupdate -divider {EX_MEM Register}
+# add wave -noupdate -label instruction_EX_MEM -radix hexadecimal /RISC_V_Pipeline_tb/uut/instruction_EX_MEM
+# add wave -noupdate -label ALUResult_MEM -radix hexadecimal /RISC_V_Pipeline_tb/uut/ALUResult_MEM
+# add wave -noupdate -label rs2_MEM -radix hexadecimal /RISC_V_Pipeline_tb/uut/rs2_MEM
+# add wave -noupdate -label rd_MEM -radix hexadecimal /RISC_V_Pipeline_tb/uut/rd_MEM
+# add wave -noupdate -label MemWrite_MEM -radix hexadecimal /RISC_V_Pipeline_tb/uut/MemWrite_MEM
+# add wave -noupdate -label RegWrite_MEM -radix hexadecimal /RISC_V_Pipeline_tb/uut/RegWrite_MEM
+# add wave -noupdate -divider MEM_STAGE
+# add wave -noupdate -label instruction_MEM -radix hexadecimal /RISC_V_Pipeline_tb/uut/instruction_EX_MEM
+# add wave -noupdate -label ReadData_MEM -radix hexadecimal /RISC_V_Pipeline_tb/uut/ReadData_MEM
+# add wave -noupdate -divider {MEM_WB Register}
+# add wave -noupdate -label instruction_MEM_WB -radix hexadecimal /RISC_V_Pipeline_tb/uut/instruction_MEM_WB
+# add wave -noupdate -label ALUResult_WB -radix hexadecimal /RISC_V_Pipeline_tb/uut/ALUResult_WB
+# add wave -noupdate -label PC_plus4_WB -radix hexadecimal /RISC_V_Pipeline_tb/uut/PC_plus4_WB
+# add wave -noupdate -label rd_WB -radix hexadecimal /RISC_V_Pipeline_tb/uut/rd_WB
+# add wave -noupdate -label RegWrite_WB -radix hexadecimal /RISC_V_Pipeline_tb/uut/RegWrite_WB
+# add wave -noupdate -divider WB_STAGE
+# add wave -noupdate -label instruction_WB -radix hexadecimal /RISC_V_Pipeline_tb/uut/instruction_MEM_WB
+# add wave -noupdate -label WriteData_WB -radix hexadecimal /RISC_V_Pipeline_tb/uut/WriteData_WB
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+# quietly wave cursor active 0
+# configure wave -namecolwidth 150
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ps
+# update
+# WaveRestoreZoom {0 ps} {525 ps}
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -247,41 +321,3 @@
 # ** Note: $stop    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/RISC_V_Pipeline_Processor_tb.v(23)
 #    Time: 510 ps  Iteration: 0  Instance: /RISC_V_Pipeline_tb
 # Break in Module RISC_V_Pipeline_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/RISC_V_Pipeline_Processor_tb.v line 23
-add wave -divider "Instructions Flow"
-add wave -hex /RISC_V_Pipeline_tb/uut/instruction_IF
-add wave -hex /RISC_V_Pipeline_tb/uut/instruction_ID
-add wave -hex /RISC_V_Pipeline_tb/uut/instruction_ID_EX
-add wave -hex /RISC_V_Pipeline_tb/uut/instruction_EX_MEM
-add wave -hex /RISC_V_Pipeline_tb/uut/instruction_MEM_WB
-
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=6.
-# Loading work.RISC_V_Pipeline_tb(fast)
-# Loading work.RISC_V_Pipeline_Processor(fast)
-# Loading work.IF_STAGE(fast)
-# Loading work.IF_ID(fast)
-# Loading work.ID_STAGE(fast)
-# Loading work.register_file(fast)
-# Loading work.ControlUnit(fast)
-# Loading work.main_decoder(fast)
-# Loading work.alu_decoder(fast)
-# Loading work.Extend(fast)
-# Loading work.ID_EX(fast)
-# Loading work.Forwarding_Unit(fast)
-# Loading work.EX_STAGE(fast)
-# Loading work.ALU(fast)
-# Loading work.EX_MEM(fast)
-# Loading work.data_memory(fast)
-# Loading work.MEM_WB(fast)
-# Loading work.WB_STAGE(fast)
-run -all
-# Memory Write - Time: 165 Addr: 00000054 Data: 00000000
-# Memory Write - Time: 215 Addr: 00000068 Data: 00000001
-# ** Note: $stop    : C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/RISC_V_Pipeline_Processor_tb.v(23)
-#    Time: 510 ps  Iteration: 0  Instance: /RISC_V_Pipeline_tb
-# Break in Module RISC_V_Pipeline_tb at C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/RISC_V_Pipeline_Processor_tb.v line 23
-do C:/Users/andyq/Documents/QuartusProjects/Architecture_code/SoC/Tareas/PipeLine_RISCV/simulation/questa/pipeline.do
-# End time: 16:45:16 on Jun 11,2025, Elapsed time: 27:54:13
-# Errors: 0, Warnings: 6
