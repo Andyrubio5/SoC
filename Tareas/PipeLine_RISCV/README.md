@@ -71,17 +71,15 @@ IF (Instruction Fetch) → ID (Instruction Decode) → EX (Execute) → MEM (Mem
 Documentation for the 5-stage pipelined RISC-V processor. This section provides detailed information about the architecture, each pipeline stage, hazard handling, and visual resources.
 
 ### 🟊 Architecture
-- [Pipeline Overview](pipeline-architecture.md)
+- [Pipeline Overview](Documentation/Pipeline_architecture.md)
 
 ### 🟊 Pipeline Stages
 - [Instruction Fetch (IF)](Documentation/IF_Stage.md)
-- [Instruction Decode (ID)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\ID_Stage.md)
-- [Execute (EX)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\EX_Stage.md)
-- [Memory Access (MEM)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\MEM_Stage.md)
-- [Write Back (WB)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\WB_Stage.md)
+- [Instruction Decode (ID)](Documentation/ID_Stage.md)
+- [Execute (EX)](Documentation/EX_Stage.md)
+- [Memory Access (MEM)](Documentation/MEM_Stage.md)
+- [Write Back (WB)](Documentation/WB_Stage.md)
 
 ### 🟊 Hazard Handling
-- [Data Hazards](hazards/data-hazards.md)
-- [Control Hazards](hazards/control-hazards.md)
-- [Forwarding](hazards/forwarding.md)
+- [Forwarding](Documentation/Unit_Fowarding.md)
 
