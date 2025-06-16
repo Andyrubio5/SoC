@@ -74,7 +74,7 @@ Documentation for the 5-stage pipelined RISC-V processor. This section provides 
 - [Pipeline Overview](pipeline-architecture.md)
 
 ### 🟊 Pipeline Stages
-- [Instruction Fetch (IF)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\IF_Stage.md)
+- [Instruction Fetch (IF)](IF_Stage.md)
 - [Instruction Decode (ID)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\ID_Stage.md)
 - [Execute (EX)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\EX_Stage.md)
 - [Memory Access (MEM)](C:\Users\andyq\Documents\QuartusProjects\Architecture_code\SoC\Tareas\PipeLine_RISCV\Documentation\MEM_Stage.md)
